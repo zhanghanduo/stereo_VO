@@ -1,0 +1,363 @@
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ORB_SLAM2	Converter.cc	/^namespace ORB_SLAM2$/;"	n	file:
+toCvMat	Converter.cc	/^cv::Mat Converter::toCvMat(const Eigen::Matrix3d &m)$/;"	f	class:ORB_SLAM2::Converter
+toCvMat	Converter.cc	/^cv::Mat Converter::toCvMat(const Eigen::Matrix<double,3,1> &m)$/;"	f	class:ORB_SLAM2::Converter
+toCvMat	Converter.cc	/^cv::Mat Converter::toCvMat(const Eigen::Matrix<double,4,4> &m)$/;"	f	class:ORB_SLAM2::Converter
+toCvMat	Converter.cc	/^cv::Mat Converter::toCvMat(const g2o::SE3Quat &SE3)$/;"	f	class:ORB_SLAM2::Converter
+toCvMat	Converter.cc	/^cv::Mat Converter::toCvMat(const g2o::Sim3 &Sim3)$/;"	f	class:ORB_SLAM2::Converter
+toCvSE3	Converter.cc	/^cv::Mat Converter::toCvSE3(const Eigen::Matrix<double,3,3> &R, const Eigen::Matrix<double,3,1> &t)$/;"	f	class:ORB_SLAM2::Converter
+toDescriptorVector	Converter.cc	/^std::vector<cv::Mat> Converter::toDescriptorVector(const cv::Mat &Descriptors)$/;"	f	class:ORB_SLAM2::Converter
+toMatrix3d	Converter.cc	/^Eigen::Matrix<double,3,3> Converter::toMatrix3d(const cv::Mat &cvMat3)$/;"	f	class:ORB_SLAM2::Converter
+toQuaternion	Converter.cc	/^std::vector<float> Converter::toQuaternion(const cv::Mat &M)$/;"	f	class:ORB_SLAM2::Converter
+toSE3Quat	Converter.cc	/^g2o::SE3Quat Converter::toSE3Quat(const cv::Mat &cvT)$/;"	f	class:ORB_SLAM2::Converter
+toVector3d	Converter.cc	/^Eigen::Matrix<double,3,1> Converter::toVector3d(const cv::Mat &cvVector)$/;"	f	class:ORB_SLAM2::Converter
+toVector3d	Converter.cc	/^Eigen::Matrix<double,3,1> Converter::toVector3d(const cv::Point3f &cvPoint)$/;"	f	class:ORB_SLAM2::Converter
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+AssignFeaturesToGrid	Frame.cc	/^void Frame::AssignFeaturesToGrid()$/;"	f	class:ORB_SLAM2::Frame
+ComputeBoW	Frame.cc	/^void Frame::ComputeBoW()$/;"	f	class:ORB_SLAM2::Frame
+ComputeImageBounds	Frame.cc	/^void Frame::ComputeImageBounds(const cv::Mat &imLeft)$/;"	f	class:ORB_SLAM2::Frame
+ComputeStereoFromRGBD	Frame.cc	/^void Frame::ComputeStereoFromRGBD(const cv::Mat &imDepth)$/;"	f	class:ORB_SLAM2::Frame
+ComputeStereoMatches	Frame.cc	/^void Frame::ComputeStereoMatches()$/;"	f	class:ORB_SLAM2::Frame
+ExtractORB	Frame.cc	/^void Frame::ExtractORB(int flag, const cv::Mat &im)$/;"	f	class:ORB_SLAM2::Frame
+Frame	Frame.cc	/^Frame::Frame()$/;"	f	class:ORB_SLAM2::Frame
+Frame	Frame.cc	/^Frame::Frame(const Frame &frame)$/;"	f	class:ORB_SLAM2::Frame
+Frame	Frame.cc	/^Frame::Frame(const cv::Mat &imGray, const cv::Mat &imDepth, const double &timeStamp, ORBextractor* extractor,ORBVocabulary* voc, cv::Mat &K, cv::Mat &distCoef, const float &bf, const float &thDepth)$/;"	f	class:ORB_SLAM2::Frame
+Frame	Frame.cc	/^Frame::Frame(const cv::Mat &imGray, const double &timeStamp, ORBextractor* extractor,ORBVocabulary* voc, cv::Mat &K, cv::Mat &distCoef, const float &bf, const float &thDepth)$/;"	f	class:ORB_SLAM2::Frame
+Frame	Frame.cc	/^Frame::Frame(const cv::Mat &imLeft, const cv::Mat &imRight, const double &timeStamp, ORBextractor* extractorLeft, ORBextractor* extractorRight, ORBVocabulary* voc, cv::Mat &K, cv::Mat &distCoef, const float &bf, const float &thDepth)$/;"	f	class:ORB_SLAM2::Frame
+GetFeaturesInArea	Frame.cc	/^vector<size_t> Frame::GetFeaturesInArea(const float &x, const float  &y, const float  &r, const int minLevel, const int maxLevel) const$/;"	f	class:ORB_SLAM2::Frame
+ORB_SLAM2	Frame.cc	/^namespace ORB_SLAM2$/;"	n	file:
+PosInGrid	Frame.cc	/^bool Frame::PosInGrid(const cv::KeyPoint &kp, int &posX, int &posY)$/;"	f	class:ORB_SLAM2::Frame
+SetPose	Frame.cc	/^void Frame::SetPose(cv::Mat Tcw)$/;"	f	class:ORB_SLAM2::Frame
+UndistortKeyPoints	Frame.cc	/^void Frame::UndistortKeyPoints()$/;"	f	class:ORB_SLAM2::Frame
+UnprojectStereo	Frame.cc	/^cv::Mat Frame::UnprojectStereo(const int &i)$/;"	f	class:ORB_SLAM2::Frame
+UpdatePoseMatrices	Frame.cc	/^void Frame::UpdatePoseMatrices()$/;"	f	class:ORB_SLAM2::Frame
+cx	Frame.cc	/^float Frame::cx, Frame::cy, Frame::fx, Frame::fy, Frame::invfx, Frame::invfy;$/;"	m	class:ORB_SLAM2::Frame	file:
+cy	Frame.cc	/^float Frame::cx, Frame::cy, Frame::fx, Frame::fy, Frame::invfx, Frame::invfy;$/;"	m	class:ORB_SLAM2::Frame	file:
+fx	Frame.cc	/^float Frame::cx, Frame::cy, Frame::fx, Frame::fy, Frame::invfx, Frame::invfy;$/;"	m	class:ORB_SLAM2::Frame	file:
+fy	Frame.cc	/^float Frame::cx, Frame::cy, Frame::fx, Frame::fy, Frame::invfx, Frame::invfy;$/;"	m	class:ORB_SLAM2::Frame	file:
+invfx	Frame.cc	/^float Frame::cx, Frame::cy, Frame::fx, Frame::fy, Frame::invfx, Frame::invfy;$/;"	m	class:ORB_SLAM2::Frame	file:
+invfy	Frame.cc	/^float Frame::cx, Frame::cy, Frame::fx, Frame::fy, Frame::invfx, Frame::invfy;$/;"	m	class:ORB_SLAM2::Frame	file:
+isInFrustum	Frame.cc	/^bool Frame::isInFrustum(MapPoint *pMP, float viewingCosLimit)$/;"	f	class:ORB_SLAM2::Frame
+mbInitialComputations	Frame.cc	/^bool Frame::mbInitialComputations=true;$/;"	m	class:ORB_SLAM2::Frame	file:
+mfGridElementHeightInv	Frame.cc	/^float Frame::mfGridElementWidthInv, Frame::mfGridElementHeightInv;$/;"	m	class:ORB_SLAM2::Frame	file:
+mfGridElementWidthInv	Frame.cc	/^float Frame::mfGridElementWidthInv, Frame::mfGridElementHeightInv;$/;"	m	class:ORB_SLAM2::Frame	file:
+mnMaxX	Frame.cc	/^float Frame::mnMinX, Frame::mnMinY, Frame::mnMaxX, Frame::mnMaxY;$/;"	m	class:ORB_SLAM2::Frame	file:
+mnMaxY	Frame.cc	/^float Frame::mnMinX, Frame::mnMinY, Frame::mnMaxX, Frame::mnMaxY;$/;"	m	class:ORB_SLAM2::Frame	file:
+mnMinX	Frame.cc	/^float Frame::mnMinX, Frame::mnMinY, Frame::mnMaxX, Frame::mnMaxY;$/;"	m	class:ORB_SLAM2::Frame	file:
+mnMinY	Frame.cc	/^float Frame::mnMinX, Frame::mnMinY, Frame::mnMaxX, Frame::mnMaxY;$/;"	m	class:ORB_SLAM2::Frame	file:
+nNextId	Frame.cc	/^long unsigned int Frame::nNextId=0;$/;"	m	class:ORB_SLAM2::Frame	file:
+DrawFrame	FrameDrawer.cc	/^cv::Mat FrameDrawer::DrawFrame()$/;"	f	class:ORB_SLAM2::FrameDrawer
+DrawTextInfo	FrameDrawer.cc	/^void FrameDrawer::DrawTextInfo(cv::Mat &im, int nState, cv::Mat &imText)$/;"	f	class:ORB_SLAM2::FrameDrawer
+FrameDrawer	FrameDrawer.cc	/^FrameDrawer::FrameDrawer(Map* pMap):mpMap(pMap)$/;"	f	class:ORB_SLAM2::FrameDrawer
+ORB_SLAM2	FrameDrawer.cc	/^namespace ORB_SLAM2$/;"	n	file:
+Update	FrameDrawer.cc	/^void FrameDrawer::Update(Tracking *pTracker)$/;"	f	class:ORB_SLAM2::FrameDrawer
+CheckFundamental	Initializer.cc	/^float Initializer::CheckFundamental(const cv::Mat &F21, vector<bool> &vbMatchesInliers, float sigma)$/;"	f	class:ORB_SLAM2::Initializer
+CheckHomography	Initializer.cc	/^float Initializer::CheckHomography(const cv::Mat &H21, const cv::Mat &H12, vector<bool> &vbMatchesInliers, float sigma)$/;"	f	class:ORB_SLAM2::Initializer
+CheckRT	Initializer.cc	/^int Initializer::CheckRT(const cv::Mat &R, const cv::Mat &t, const vector<cv::KeyPoint> &vKeys1, const vector<cv::KeyPoint> &vKeys2,$/;"	f	class:ORB_SLAM2::Initializer
+ComputeF21	Initializer.cc	/^cv::Mat Initializer::ComputeF21(const vector<cv::Point2f> &vP1,const vector<cv::Point2f> &vP2)$/;"	f	class:ORB_SLAM2::Initializer
+ComputeH21	Initializer.cc	/^cv::Mat Initializer::ComputeH21(const vector<cv::Point2f> &vP1, const vector<cv::Point2f> &vP2)$/;"	f	class:ORB_SLAM2::Initializer
+DecomposeE	Initializer.cc	/^void Initializer::DecomposeE(const cv::Mat &E, cv::Mat &R1, cv::Mat &R2, cv::Mat &t)$/;"	f	class:ORB_SLAM2::Initializer
+FindFundamental	Initializer.cc	/^void Initializer::FindFundamental(vector<bool> &vbMatchesInliers, float &score, cv::Mat &F21)$/;"	f	class:ORB_SLAM2::Initializer
+FindHomography	Initializer.cc	/^void Initializer::FindHomography(vector<bool> &vbMatchesInliers, float &score, cv::Mat &H21)$/;"	f	class:ORB_SLAM2::Initializer
+Initialize	Initializer.cc	/^bool Initializer::Initialize(const Frame &CurrentFrame, const vector<int> &vMatches12, cv::Mat &R21, cv::Mat &t21,$/;"	f	class:ORB_SLAM2::Initializer
+Initializer	Initializer.cc	/^Initializer::Initializer(const Frame &ReferenceFrame, float sigma, int iterations)$/;"	f	class:ORB_SLAM2::Initializer
+Normalize	Initializer.cc	/^void Initializer::Normalize(const vector<cv::KeyPoint> &vKeys, vector<cv::Point2f> &vNormalizedPoints, cv::Mat &T)$/;"	f	class:ORB_SLAM2::Initializer
+ORB_SLAM2	Initializer.cc	/^namespace ORB_SLAM2$/;"	n	file:
+ReconstructF	Initializer.cc	/^bool Initializer::ReconstructF(vector<bool> &vbMatchesInliers, cv::Mat &F21, cv::Mat &K,$/;"	f	class:ORB_SLAM2::Initializer
+ReconstructH	Initializer.cc	/^bool Initializer::ReconstructH(vector<bool> &vbMatchesInliers, cv::Mat &H21, cv::Mat &K,$/;"	f	class:ORB_SLAM2::Initializer
+Triangulate	Initializer.cc	/^void Initializer::Triangulate(const cv::KeyPoint &kp1, const cv::KeyPoint &kp2, const cv::Mat &P1, const cv::Mat &P2, cv::Mat &x3D)$/;"	f	class:ORB_SLAM2::Initializer
+AddChild	KeyFrame.cc	/^void KeyFrame::AddChild(KeyFrame *pKF)$/;"	f	class:ORB_SLAM2::KeyFrame
+AddConnection	KeyFrame.cc	/^void KeyFrame::AddConnection(KeyFrame *pKF, const int &weight)$/;"	f	class:ORB_SLAM2::KeyFrame
+AddLoopEdge	KeyFrame.cc	/^void KeyFrame::AddLoopEdge(KeyFrame *pKF)$/;"	f	class:ORB_SLAM2::KeyFrame
+AddMapPoint	KeyFrame.cc	/^void KeyFrame::AddMapPoint(MapPoint *pMP, const size_t &idx)$/;"	f	class:ORB_SLAM2::KeyFrame
+ChangeParent	KeyFrame.cc	/^void KeyFrame::ChangeParent(KeyFrame *pKF)$/;"	f	class:ORB_SLAM2::KeyFrame
+ComputeBoW	KeyFrame.cc	/^void KeyFrame::ComputeBoW()$/;"	f	class:ORB_SLAM2::KeyFrame
+ComputeSceneMedianDepth	KeyFrame.cc	/^float KeyFrame::ComputeSceneMedianDepth(const int q)$/;"	f	class:ORB_SLAM2::KeyFrame
+EraseChild	KeyFrame.cc	/^void KeyFrame::EraseChild(KeyFrame *pKF)$/;"	f	class:ORB_SLAM2::KeyFrame
+EraseConnection	KeyFrame.cc	/^void KeyFrame::EraseConnection(KeyFrame* pKF)$/;"	f	class:ORB_SLAM2::KeyFrame
+EraseMapPointMatch	KeyFrame.cc	/^void KeyFrame::EraseMapPointMatch(MapPoint* pMP)$/;"	f	class:ORB_SLAM2::KeyFrame
+EraseMapPointMatch	KeyFrame.cc	/^void KeyFrame::EraseMapPointMatch(const size_t &idx)$/;"	f	class:ORB_SLAM2::KeyFrame
+GetBestCovisibilityKeyFrames	KeyFrame.cc	/^vector<KeyFrame*> KeyFrame::GetBestCovisibilityKeyFrames(const int &N)$/;"	f	class:ORB_SLAM2::KeyFrame
+GetCameraCenter	KeyFrame.cc	/^cv::Mat KeyFrame::GetCameraCenter()$/;"	f	class:ORB_SLAM2::KeyFrame
+GetChilds	KeyFrame.cc	/^set<KeyFrame*> KeyFrame::GetChilds()$/;"	f	class:ORB_SLAM2::KeyFrame
+GetConnectedKeyFrames	KeyFrame.cc	/^set<KeyFrame*> KeyFrame::GetConnectedKeyFrames()$/;"	f	class:ORB_SLAM2::KeyFrame
+GetCovisiblesByWeight	KeyFrame.cc	/^vector<KeyFrame*> KeyFrame::GetCovisiblesByWeight(const int &w)$/;"	f	class:ORB_SLAM2::KeyFrame
+GetFeaturesInArea	KeyFrame.cc	/^vector<size_t> KeyFrame::GetFeaturesInArea(const float &x, const float &y, const float &r) const$/;"	f	class:ORB_SLAM2::KeyFrame
+GetLoopEdges	KeyFrame.cc	/^set<KeyFrame*> KeyFrame::GetLoopEdges()$/;"	f	class:ORB_SLAM2::KeyFrame
+GetMapPoint	KeyFrame.cc	/^MapPoint* KeyFrame::GetMapPoint(const size_t &idx)$/;"	f	class:ORB_SLAM2::KeyFrame
+GetMapPointMatches	KeyFrame.cc	/^vector<MapPoint*> KeyFrame::GetMapPointMatches()$/;"	f	class:ORB_SLAM2::KeyFrame
+GetMapPoints	KeyFrame.cc	/^set<MapPoint*> KeyFrame::GetMapPoints()$/;"	f	class:ORB_SLAM2::KeyFrame
+GetParent	KeyFrame.cc	/^KeyFrame* KeyFrame::GetParent()$/;"	f	class:ORB_SLAM2::KeyFrame
+GetPose	KeyFrame.cc	/^cv::Mat KeyFrame::GetPose()$/;"	f	class:ORB_SLAM2::KeyFrame
+GetPoseInverse	KeyFrame.cc	/^cv::Mat KeyFrame::GetPoseInverse()$/;"	f	class:ORB_SLAM2::KeyFrame
+GetRotation	KeyFrame.cc	/^cv::Mat KeyFrame::GetRotation()$/;"	f	class:ORB_SLAM2::KeyFrame
+GetStereoCenter	KeyFrame.cc	/^cv::Mat KeyFrame::GetStereoCenter()$/;"	f	class:ORB_SLAM2::KeyFrame
+GetTranslation	KeyFrame.cc	/^cv::Mat KeyFrame::GetTranslation()$/;"	f	class:ORB_SLAM2::KeyFrame
+GetVectorCovisibleKeyFrames	KeyFrame.cc	/^vector<KeyFrame*> KeyFrame::GetVectorCovisibleKeyFrames()$/;"	f	class:ORB_SLAM2::KeyFrame
+GetWeight	KeyFrame.cc	/^int KeyFrame::GetWeight(KeyFrame *pKF)$/;"	f	class:ORB_SLAM2::KeyFrame
+IsInImage	KeyFrame.cc	/^bool KeyFrame::IsInImage(const float &x, const float &y) const$/;"	f	class:ORB_SLAM2::KeyFrame
+KeyFrame	KeyFrame.cc	/^KeyFrame::KeyFrame(Frame &F, Map *pMap, KeyFrameDatabase *pKFDB):$/;"	f	class:ORB_SLAM2::KeyFrame
+ORB_SLAM2	KeyFrame.cc	/^namespace ORB_SLAM2$/;"	n	file:
+ReplaceMapPointMatch	KeyFrame.cc	/^void KeyFrame::ReplaceMapPointMatch(const size_t &idx, MapPoint* pMP)$/;"	f	class:ORB_SLAM2::KeyFrame
+SetBadFlag	KeyFrame.cc	/^void KeyFrame::SetBadFlag()$/;"	f	class:ORB_SLAM2::KeyFrame
+SetErase	KeyFrame.cc	/^void KeyFrame::SetErase()$/;"	f	class:ORB_SLAM2::KeyFrame
+SetNotErase	KeyFrame.cc	/^void KeyFrame::SetNotErase()$/;"	f	class:ORB_SLAM2::KeyFrame
+SetPose	KeyFrame.cc	/^void KeyFrame::SetPose(const cv::Mat &Tcw_)$/;"	f	class:ORB_SLAM2::KeyFrame
+TrackedMapPoints	KeyFrame.cc	/^int KeyFrame::TrackedMapPoints(const int &minObs)$/;"	f	class:ORB_SLAM2::KeyFrame
+UnprojectStereo	KeyFrame.cc	/^cv::Mat KeyFrame::UnprojectStereo(int i)$/;"	f	class:ORB_SLAM2::KeyFrame
+UpdateBestCovisibles	KeyFrame.cc	/^void KeyFrame::UpdateBestCovisibles()$/;"	f	class:ORB_SLAM2::KeyFrame
+UpdateConnections	KeyFrame.cc	/^void KeyFrame::UpdateConnections()$/;"	f	class:ORB_SLAM2::KeyFrame
+hasChild	KeyFrame.cc	/^bool KeyFrame::hasChild(KeyFrame *pKF)$/;"	f	class:ORB_SLAM2::KeyFrame
+isBad	KeyFrame.cc	/^bool KeyFrame::isBad()$/;"	f	class:ORB_SLAM2::KeyFrame
+nNextId	KeyFrame.cc	/^long unsigned int KeyFrame::nNextId=0;$/;"	m	class:ORB_SLAM2::KeyFrame	file:
+DetectLoopCandidates	KeyFrameDatabase.cc	/^vector<KeyFrame*> KeyFrameDatabase::DetectLoopCandidates(KeyFrame* pKF, float minScore)$/;"	f	class:ORB_SLAM2::KeyFrameDatabase
+DetectRelocalizationCandidates	KeyFrameDatabase.cc	/^vector<KeyFrame*> KeyFrameDatabase::DetectRelocalizationCandidates(Frame *F)$/;"	f	class:ORB_SLAM2::KeyFrameDatabase
+KeyFrameDatabase	KeyFrameDatabase.cc	/^KeyFrameDatabase::KeyFrameDatabase (const ORBVocabulary &voc):$/;"	f	class:ORB_SLAM2::KeyFrameDatabase
+ORB_SLAM2	KeyFrameDatabase.cc	/^namespace ORB_SLAM2$/;"	n	file:
+add	KeyFrameDatabase.cc	/^void KeyFrameDatabase::add(KeyFrame *pKF)$/;"	f	class:ORB_SLAM2::KeyFrameDatabase
+clear	KeyFrameDatabase.cc	/^void KeyFrameDatabase::clear()$/;"	f	class:ORB_SLAM2::KeyFrameDatabase
+erase	KeyFrameDatabase.cc	/^void KeyFrameDatabase::erase(KeyFrame* pKF)$/;"	f	class:ORB_SLAM2::KeyFrameDatabase
+AcceptKeyFrames	LocalMapping.cc	/^bool LocalMapping::AcceptKeyFrames()$/;"	f	class:ORB_SLAM2::LocalMapping
+CheckFinish	LocalMapping.cc	/^bool LocalMapping::CheckFinish()$/;"	f	class:ORB_SLAM2::LocalMapping
+CheckNewKeyFrames	LocalMapping.cc	/^bool LocalMapping::CheckNewKeyFrames()$/;"	f	class:ORB_SLAM2::LocalMapping
+ComputeF12	LocalMapping.cc	/^cv::Mat LocalMapping::ComputeF12(KeyFrame *&pKF1, KeyFrame *&pKF2)$/;"	f	class:ORB_SLAM2::LocalMapping
+CreateNewMapPoints	LocalMapping.cc	/^void LocalMapping::CreateNewMapPoints()$/;"	f	class:ORB_SLAM2::LocalMapping
+InsertKeyFrame	LocalMapping.cc	/^void LocalMapping::InsertKeyFrame(KeyFrame *pKF)$/;"	f	class:ORB_SLAM2::LocalMapping
+InterruptBA	LocalMapping.cc	/^void LocalMapping::InterruptBA()$/;"	f	class:ORB_SLAM2::LocalMapping
+KeyFrameCulling	LocalMapping.cc	/^void LocalMapping::KeyFrameCulling()$/;"	f	class:ORB_SLAM2::LocalMapping
+LocalMapping	LocalMapping.cc	/^LocalMapping::LocalMapping(Map *pMap, const float bMonocular):$/;"	f	class:ORB_SLAM2::LocalMapping
+MapPointCulling	LocalMapping.cc	/^void LocalMapping::MapPointCulling()$/;"	f	class:ORB_SLAM2::LocalMapping
+ORB_SLAM2	LocalMapping.cc	/^namespace ORB_SLAM2$/;"	n	file:
+ProcessNewKeyFrame	LocalMapping.cc	/^void LocalMapping::ProcessNewKeyFrame()$/;"	f	class:ORB_SLAM2::LocalMapping
+Release	LocalMapping.cc	/^void LocalMapping::Release()$/;"	f	class:ORB_SLAM2::LocalMapping
+RequestFinish	LocalMapping.cc	/^void LocalMapping::RequestFinish()$/;"	f	class:ORB_SLAM2::LocalMapping
+RequestReset	LocalMapping.cc	/^void LocalMapping::RequestReset()$/;"	f	class:ORB_SLAM2::LocalMapping
+RequestStop	LocalMapping.cc	/^void LocalMapping::RequestStop()$/;"	f	class:ORB_SLAM2::LocalMapping
+ResetIfRequested	LocalMapping.cc	/^void LocalMapping::ResetIfRequested()$/;"	f	class:ORB_SLAM2::LocalMapping
+Run	LocalMapping.cc	/^void LocalMapping::Run()$/;"	f	class:ORB_SLAM2::LocalMapping
+SearchInNeighbors	LocalMapping.cc	/^void LocalMapping::SearchInNeighbors()$/;"	f	class:ORB_SLAM2::LocalMapping
+SetAcceptKeyFrames	LocalMapping.cc	/^void LocalMapping::SetAcceptKeyFrames(bool flag)$/;"	f	class:ORB_SLAM2::LocalMapping
+SetFinish	LocalMapping.cc	/^void LocalMapping::SetFinish()$/;"	f	class:ORB_SLAM2::LocalMapping
+SetLoopCloser	LocalMapping.cc	/^void LocalMapping::SetLoopCloser(LoopClosing* pLoopCloser)$/;"	f	class:ORB_SLAM2::LocalMapping
+SetNotStop	LocalMapping.cc	/^bool LocalMapping::SetNotStop(bool flag)$/;"	f	class:ORB_SLAM2::LocalMapping
+SetTracker	LocalMapping.cc	/^void LocalMapping::SetTracker(Tracking *pTracker)$/;"	f	class:ORB_SLAM2::LocalMapping
+SkewSymmetricMatrix	LocalMapping.cc	/^cv::Mat LocalMapping::SkewSymmetricMatrix(const cv::Mat &v)$/;"	f	class:ORB_SLAM2::LocalMapping
+Stop	LocalMapping.cc	/^bool LocalMapping::Stop()$/;"	f	class:ORB_SLAM2::LocalMapping
+isFinished	LocalMapping.cc	/^bool LocalMapping::isFinished()$/;"	f	class:ORB_SLAM2::LocalMapping
+isStopped	LocalMapping.cc	/^bool LocalMapping::isStopped()$/;"	f	class:ORB_SLAM2::LocalMapping
+stopRequested	LocalMapping.cc	/^bool LocalMapping::stopRequested()$/;"	f	class:ORB_SLAM2::LocalMapping
+CheckFinish	LoopClosing.cc	/^bool LoopClosing::CheckFinish()$/;"	f	class:ORB_SLAM2::LoopClosing
+CheckNewKeyFrames	LoopClosing.cc	/^bool LoopClosing::CheckNewKeyFrames()$/;"	f	class:ORB_SLAM2::LoopClosing
+ComputeSim3	LoopClosing.cc	/^bool LoopClosing::ComputeSim3()$/;"	f	class:ORB_SLAM2::LoopClosing
+CorrectLoop	LoopClosing.cc	/^void LoopClosing::CorrectLoop()$/;"	f	class:ORB_SLAM2::LoopClosing
+DetectLoop	LoopClosing.cc	/^bool LoopClosing::DetectLoop()$/;"	f	class:ORB_SLAM2::LoopClosing
+InsertKeyFrame	LoopClosing.cc	/^void LoopClosing::InsertKeyFrame(KeyFrame *pKF)$/;"	f	class:ORB_SLAM2::LoopClosing
+LoopClosing	LoopClosing.cc	/^LoopClosing::LoopClosing(Map *pMap, KeyFrameDatabase *pDB, ORBVocabulary *pVoc, const bool bFixScale):$/;"	f	class:ORB_SLAM2::LoopClosing
+ORB_SLAM2	LoopClosing.cc	/^namespace ORB_SLAM2$/;"	n	file:
+RequestFinish	LoopClosing.cc	/^void LoopClosing::RequestFinish()$/;"	f	class:ORB_SLAM2::LoopClosing
+RequestReset	LoopClosing.cc	/^void LoopClosing::RequestReset()$/;"	f	class:ORB_SLAM2::LoopClosing
+ResetIfRequested	LoopClosing.cc	/^void LoopClosing::ResetIfRequested()$/;"	f	class:ORB_SLAM2::LoopClosing
+Run	LoopClosing.cc	/^void LoopClosing::Run()$/;"	f	class:ORB_SLAM2::LoopClosing
+RunGlobalBundleAdjustment	LoopClosing.cc	/^void LoopClosing::RunGlobalBundleAdjustment(unsigned long nLoopKF)$/;"	f	class:ORB_SLAM2::LoopClosing
+SearchAndFuse	LoopClosing.cc	/^void LoopClosing::SearchAndFuse(const KeyFrameAndPose &CorrectedPosesMap)$/;"	f	class:ORB_SLAM2::LoopClosing
+SetFinish	LoopClosing.cc	/^void LoopClosing::SetFinish()$/;"	f	class:ORB_SLAM2::LoopClosing
+SetLocalMapper	LoopClosing.cc	/^void LoopClosing::SetLocalMapper(LocalMapping *pLocalMapper)$/;"	f	class:ORB_SLAM2::LoopClosing
+SetTracker	LoopClosing.cc	/^void LoopClosing::SetTracker(Tracking *pTracker)$/;"	f	class:ORB_SLAM2::LoopClosing
+isFinished	LoopClosing.cc	/^bool LoopClosing::isFinished()$/;"	f	class:ORB_SLAM2::LoopClosing
+AddKeyFrame	Map.cc	/^void Map::AddKeyFrame(KeyFrame *pKF)$/;"	f	class:ORB_SLAM2::Map
+AddMapPoint	Map.cc	/^void Map::AddMapPoint(MapPoint *pMP)$/;"	f	class:ORB_SLAM2::Map
+EraseKeyFrame	Map.cc	/^void Map::EraseKeyFrame(KeyFrame *pKF)$/;"	f	class:ORB_SLAM2::Map
+EraseMapPoint	Map.cc	/^void Map::EraseMapPoint(MapPoint *pMP)$/;"	f	class:ORB_SLAM2::Map
+GetAllKeyFrames	Map.cc	/^vector<KeyFrame*> Map::GetAllKeyFrames()$/;"	f	class:ORB_SLAM2::Map
+GetAllMapPoints	Map.cc	/^vector<MapPoint*> Map::GetAllMapPoints()$/;"	f	class:ORB_SLAM2::Map
+GetMaxKFid	Map.cc	/^long unsigned int Map::GetMaxKFid()$/;"	f	class:ORB_SLAM2::Map
+GetReferenceMapPoints	Map.cc	/^vector<MapPoint*> Map::GetReferenceMapPoints()$/;"	f	class:ORB_SLAM2::Map
+KeyFramesInMap	Map.cc	/^long unsigned int Map::KeyFramesInMap()$/;"	f	class:ORB_SLAM2::Map
+Map	Map.cc	/^Map::Map():mnMaxKFid(0)$/;"	f	class:ORB_SLAM2::Map
+MapPointsInMap	Map.cc	/^long unsigned int Map::MapPointsInMap()$/;"	f	class:ORB_SLAM2::Map
+ORB_SLAM2	Map.cc	/^namespace ORB_SLAM2$/;"	n	file:
+SetReferenceMapPoints	Map.cc	/^void Map::SetReferenceMapPoints(const vector<MapPoint *> &vpMPs)$/;"	f	class:ORB_SLAM2::Map
+clear	Map.cc	/^void Map::clear()$/;"	f	class:ORB_SLAM2::Map
+DrawCurrentCamera	MapDrawer.cc	/^void MapDrawer::DrawCurrentCamera(pangolin::OpenGlMatrix &Twc)$/;"	f	class:ORB_SLAM2::MapDrawer
+DrawKeyFrames	MapDrawer.cc	/^void MapDrawer::DrawKeyFrames(const bool bDrawKF, const bool bDrawGraph)$/;"	f	class:ORB_SLAM2::MapDrawer
+DrawMapPoints	MapDrawer.cc	/^void MapDrawer::DrawMapPoints()$/;"	f	class:ORB_SLAM2::MapDrawer
+GetCurrentOpenGLCameraMatrix	MapDrawer.cc	/^void MapDrawer::GetCurrentOpenGLCameraMatrix(pangolin::OpenGlMatrix &M)$/;"	f	class:ORB_SLAM2::MapDrawer
+MapDrawer	MapDrawer.cc	/^MapDrawer::MapDrawer(Map* pMap, const string &strSettingPath):mpMap(pMap)$/;"	f	class:ORB_SLAM2::MapDrawer
+ORB_SLAM2	MapDrawer.cc	/^namespace ORB_SLAM2$/;"	n	file:
+SetCurrentCameraPose	MapDrawer.cc	/^void MapDrawer::SetCurrentCameraPose(const cv::Mat &Tcw)$/;"	f	class:ORB_SLAM2::MapDrawer
+AddObservation	MapPoint.cc	/^void MapPoint::AddObservation(KeyFrame* pKF, size_t idx)$/;"	f	class:ORB_SLAM2::MapPoint
+ComputeDistinctiveDescriptors	MapPoint.cc	/^void MapPoint::ComputeDistinctiveDescriptors()$/;"	f	class:ORB_SLAM2::MapPoint
+EraseObservation	MapPoint.cc	/^void MapPoint::EraseObservation(KeyFrame* pKF)$/;"	f	class:ORB_SLAM2::MapPoint
+GetDescriptor	MapPoint.cc	/^cv::Mat MapPoint::GetDescriptor()$/;"	f	class:ORB_SLAM2::MapPoint
+GetFoundRatio	MapPoint.cc	/^float MapPoint::GetFoundRatio()$/;"	f	class:ORB_SLAM2::MapPoint
+GetIndexInKeyFrame	MapPoint.cc	/^int MapPoint::GetIndexInKeyFrame(KeyFrame *pKF)$/;"	f	class:ORB_SLAM2::MapPoint
+GetMaxDistanceInvariance	MapPoint.cc	/^float MapPoint::GetMaxDistanceInvariance()$/;"	f	class:ORB_SLAM2::MapPoint
+GetMinDistanceInvariance	MapPoint.cc	/^float MapPoint::GetMinDistanceInvariance()$/;"	f	class:ORB_SLAM2::MapPoint
+GetNormal	MapPoint.cc	/^cv::Mat MapPoint::GetNormal()$/;"	f	class:ORB_SLAM2::MapPoint
+GetObservations	MapPoint.cc	/^map<KeyFrame*, size_t> MapPoint::GetObservations()$/;"	f	class:ORB_SLAM2::MapPoint
+GetReferenceKeyFrame	MapPoint.cc	/^KeyFrame* MapPoint::GetReferenceKeyFrame()$/;"	f	class:ORB_SLAM2::MapPoint
+GetReplaced	MapPoint.cc	/^MapPoint* MapPoint::GetReplaced()$/;"	f	class:ORB_SLAM2::MapPoint
+GetWorldPos	MapPoint.cc	/^cv::Mat MapPoint::GetWorldPos()$/;"	f	class:ORB_SLAM2::MapPoint
+IncreaseFound	MapPoint.cc	/^void MapPoint::IncreaseFound(int n)$/;"	f	class:ORB_SLAM2::MapPoint
+IncreaseVisible	MapPoint.cc	/^void MapPoint::IncreaseVisible(int n)$/;"	f	class:ORB_SLAM2::MapPoint
+IsInKeyFrame	MapPoint.cc	/^bool MapPoint::IsInKeyFrame(KeyFrame *pKF)$/;"	f	class:ORB_SLAM2::MapPoint
+MapPoint	MapPoint.cc	/^MapPoint::MapPoint(const cv::Mat &Pos, KeyFrame *pRefKF, Map* pMap):$/;"	f	class:ORB_SLAM2::MapPoint
+MapPoint	MapPoint.cc	/^MapPoint::MapPoint(const cv::Mat &Pos, Map* pMap, Frame* pFrame, const int &idxF):$/;"	f	class:ORB_SLAM2::MapPoint
+ORB_SLAM2	MapPoint.cc	/^namespace ORB_SLAM2$/;"	n	file:
+Observations	MapPoint.cc	/^int MapPoint::Observations()$/;"	f	class:ORB_SLAM2::MapPoint
+PredictScale	MapPoint.cc	/^int MapPoint::PredictScale(const float &currentDist, const float &logScaleFactor)$/;"	f	class:ORB_SLAM2::MapPoint
+Replace	MapPoint.cc	/^void MapPoint::Replace(MapPoint* pMP)$/;"	f	class:ORB_SLAM2::MapPoint
+SetBadFlag	MapPoint.cc	/^void MapPoint::SetBadFlag()$/;"	f	class:ORB_SLAM2::MapPoint
+SetWorldPos	MapPoint.cc	/^void MapPoint::SetWorldPos(const cv::Mat &Pos)$/;"	f	class:ORB_SLAM2::MapPoint
+UpdateNormalAndDepth	MapPoint.cc	/^void MapPoint::UpdateNormalAndDepth()$/;"	f	class:ORB_SLAM2::MapPoint
+isBad	MapPoint.cc	/^bool MapPoint::isBad()$/;"	f	class:ORB_SLAM2::MapPoint
+mGlobalMutex	MapPoint.cc	/^mutex MapPoint::mGlobalMutex;$/;"	m	class:ORB_SLAM2::MapPoint	file:
+nNextId	MapPoint.cc	/^long unsigned int MapPoint::nNextId=0;$/;"	m	class:ORB_SLAM2::MapPoint	file:
+ComputeKeyPointsOctTree	ORBextractor.cc	/^void ORBextractor::ComputeKeyPointsOctTree(vector<vector<KeyPoint> >& allKeypoints)$/;"	f	class:ORB_SLAM2::ORBextractor
+ComputeKeyPointsOld	ORBextractor.cc	/^void ORBextractor::ComputeKeyPointsOld(std::vector<std::vector<KeyPoint> > &allKeypoints)$/;"	f	class:ORB_SLAM2::ORBextractor
+ComputePyramid	ORBextractor.cc	/^void ORBextractor::ComputePyramid(cv::Mat image)$/;"	f	class:ORB_SLAM2::ORBextractor
+DistributeOctTree	ORBextractor.cc	/^vector<cv::KeyPoint> ORBextractor::DistributeOctTree(const vector<cv::KeyPoint>& vToDistributeKeys, const int &minX,$/;"	f	class:ORB_SLAM2::ORBextractor
+DivideNode	ORBextractor.cc	/^void ExtractorNode::DivideNode(ExtractorNode &n1, ExtractorNode &n2, ExtractorNode &n3, ExtractorNode &n4)$/;"	f	class:ORB_SLAM2::ExtractorNode
+EDGE_THRESHOLD	ORBextractor.cc	/^const int EDGE_THRESHOLD = 19;$/;"	m	namespace:ORB_SLAM2	file:
+GET_VALUE	ORBextractor.cc	118;"	d	file:
+GET_VALUE	ORBextractor.cc	146;"	d	file:
+HALF_PATCH_SIZE	ORBextractor.cc	/^const int HALF_PATCH_SIZE = 15;$/;"	m	namespace:ORB_SLAM2	file:
+IC_Angle	ORBextractor.cc	/^static float IC_Angle(const Mat& image, Point2f pt,  const vector<int> & u_max)$/;"	f	namespace:ORB_SLAM2
+ORB_SLAM2	ORBextractor.cc	/^namespace ORB_SLAM2$/;"	n	file:
+ORBextractor	ORBextractor.cc	/^ORBextractor::ORBextractor(int _nfeatures, float _scaleFactor, int _nlevels,$/;"	f	class:ORB_SLAM2::ORBextractor
+PATCH_SIZE	ORBextractor.cc	/^const int PATCH_SIZE = 31;$/;"	m	namespace:ORB_SLAM2	file:
+bit_pattern_31_	ORBextractor.cc	/^static int bit_pattern_31_[256*4] =$/;"	m	namespace:ORB_SLAM2	file:
+computeDescriptors	ORBextractor.cc	/^static void computeDescriptors(const Mat& image, vector<KeyPoint>& keypoints, Mat& descriptors,$/;"	f	namespace:ORB_SLAM2
+computeOrbDescriptor	ORBextractor.cc	/^static void computeOrbDescriptor(const KeyPoint& kpt,$/;"	f	namespace:ORB_SLAM2
+computeOrientation	ORBextractor.cc	/^static void computeOrientation(const Mat& image, vector<KeyPoint>& keypoints, const vector<int>& umax)$/;"	f	namespace:ORB_SLAM2
+factorPI	ORBextractor.cc	/^const float factorPI = (float)(CV_PI\/180.f);$/;"	m	namespace:ORB_SLAM2	file:
+operator ()	ORBextractor.cc	/^void ORBextractor::operator()( InputArray _image, InputArray _mask, vector<KeyPoint>& _keypoints,$/;"	f	class:ORB_SLAM2::ORBextractor
+CheckDistEpipolarLine	ORBmatcher.cc	/^bool ORBmatcher::CheckDistEpipolarLine(const cv::KeyPoint &kp1,const cv::KeyPoint &kp2,const cv::Mat &F12,const KeyFrame* pKF2)$/;"	f	class:ORB_SLAM2::ORBmatcher
+ComputeThreeMaxima	ORBmatcher.cc	/^void ORBmatcher::ComputeThreeMaxima(vector<int>* histo, const int L, int &ind1, int &ind2, int &ind3)$/;"	f	class:ORB_SLAM2::ORBmatcher
+DescriptorDistance	ORBmatcher.cc	/^int ORBmatcher::DescriptorDistance(const cv::Mat &a, const cv::Mat &b)$/;"	f	class:ORB_SLAM2::ORBmatcher
+Fuse	ORBmatcher.cc	/^int ORBmatcher::Fuse(KeyFrame *pKF, const vector<MapPoint *> &vpMapPoints, const float th)$/;"	f	class:ORB_SLAM2::ORBmatcher
+Fuse	ORBmatcher.cc	/^int ORBmatcher::Fuse(KeyFrame *pKF, cv::Mat Scw, const vector<MapPoint *> &vpPoints, float th, vector<MapPoint *> &vpReplacePoint)$/;"	f	class:ORB_SLAM2::ORBmatcher
+HISTO_LENGTH	ORBmatcher.cc	/^const int ORBmatcher::HISTO_LENGTH = 30;$/;"	m	class:ORB_SLAM2::ORBmatcher	file:
+ORB_SLAM2	ORBmatcher.cc	/^namespace ORB_SLAM2$/;"	n	file:
+ORBmatcher	ORBmatcher.cc	/^ORBmatcher::ORBmatcher(float nnratio, bool checkOri): mfNNratio(nnratio), mbCheckOrientation(checkOri)$/;"	f	class:ORB_SLAM2::ORBmatcher
+RadiusByViewingCos	ORBmatcher.cc	/^float ORBmatcher::RadiusByViewingCos(const float &viewCos)$/;"	f	class:ORB_SLAM2::ORBmatcher
+SearchByBoW	ORBmatcher.cc	/^int ORBmatcher::SearchByBoW(KeyFrame *pKF1, KeyFrame *pKF2, vector<MapPoint *> &vpMatches12)$/;"	f	class:ORB_SLAM2::ORBmatcher
+SearchByBoW	ORBmatcher.cc	/^int ORBmatcher::SearchByBoW(KeyFrame* pKF,Frame &F, vector<MapPoint*> &vpMapPointMatches)$/;"	f	class:ORB_SLAM2::ORBmatcher
+SearchByProjection	ORBmatcher.cc	/^int ORBmatcher::SearchByProjection(Frame &CurrentFrame, KeyFrame *pKF, const set<MapPoint*> &sAlreadyFound, const float th , const int ORBdist)$/;"	f	class:ORB_SLAM2::ORBmatcher
+SearchByProjection	ORBmatcher.cc	/^int ORBmatcher::SearchByProjection(Frame &CurrentFrame, const Frame &LastFrame, const float th, const bool bMono)$/;"	f	class:ORB_SLAM2::ORBmatcher
+SearchByProjection	ORBmatcher.cc	/^int ORBmatcher::SearchByProjection(Frame &F, const vector<MapPoint*> &vpMapPoints, const float th)$/;"	f	class:ORB_SLAM2::ORBmatcher
+SearchByProjection	ORBmatcher.cc	/^int ORBmatcher::SearchByProjection(KeyFrame* pKF, cv::Mat Scw, const vector<MapPoint*> &vpPoints, vector<MapPoint*> &vpMatched, int th)$/;"	f	class:ORB_SLAM2::ORBmatcher
+SearchBySim3	ORBmatcher.cc	/^int ORBmatcher::SearchBySim3(KeyFrame *pKF1, KeyFrame *pKF2, vector<MapPoint*> &vpMatches12,$/;"	f	class:ORB_SLAM2::ORBmatcher
+SearchForInitialization	ORBmatcher.cc	/^int ORBmatcher::SearchForInitialization(Frame &F1, Frame &F2, vector<cv::Point2f> &vbPrevMatched, vector<int> &vnMatches12, int windowSize)$/;"	f	class:ORB_SLAM2::ORBmatcher
+SearchForTriangulation	ORBmatcher.cc	/^int ORBmatcher::SearchForTriangulation(KeyFrame *pKF1, KeyFrame *pKF2, cv::Mat F12,$/;"	f	class:ORB_SLAM2::ORBmatcher
+TH_HIGH	ORBmatcher.cc	/^const int ORBmatcher::TH_HIGH = 100;$/;"	m	class:ORB_SLAM2::ORBmatcher	file:
+TH_LOW	ORBmatcher.cc	/^const int ORBmatcher::TH_LOW = 50;$/;"	m	class:ORB_SLAM2::ORBmatcher	file:
+BundleAdjustment	Optimizer.cc	/^void Optimizer::BundleAdjustment(const vector<KeyFrame *> &vpKFs, const vector<MapPoint *> &vpMP,$/;"	f	class:ORB_SLAM2::Optimizer
+GlobalBundleAdjustemnt	Optimizer.cc	/^void Optimizer::GlobalBundleAdjustemnt(Map* pMap, int nIterations, bool* pbStopFlag, const unsigned long nLoopKF, const bool bRobust)$/;"	f	class:ORB_SLAM2::Optimizer
+LocalBundleAdjustment	Optimizer.cc	/^void Optimizer::LocalBundleAdjustment(KeyFrame *pKF, bool* pbStopFlag, Map* pMap)$/;"	f	class:ORB_SLAM2::Optimizer
+ORB_SLAM2	Optimizer.cc	/^namespace ORB_SLAM2$/;"	n	file:
+OptimizeEssentialGraph	Optimizer.cc	/^void Optimizer::OptimizeEssentialGraph(Map* pMap, KeyFrame* pLoopKF, KeyFrame* pCurKF,$/;"	f	class:ORB_SLAM2::Optimizer
+OptimizeSim3	Optimizer.cc	/^int Optimizer::OptimizeSim3(KeyFrame *pKF1, KeyFrame *pKF2, vector<MapPoint *> &vpMatches1, g2o::Sim3 &g2oS12, const float th2, const bool bFixScale)$/;"	f	class:ORB_SLAM2::Optimizer
+PoseOptimization	Optimizer.cc	/^int Optimizer::PoseOptimization(Frame *pFrame)$/;"	f	class:ORB_SLAM2::Optimizer
+CheckInliers	PnPsolver.cc	/^void PnPsolver::CheckInliers()$/;"	f	class:ORB_SLAM2::PnPsolver
+ORB_SLAM2	PnPsolver.cc	/^namespace ORB_SLAM2$/;"	n	file:
+PnPsolver	PnPsolver.cc	/^PnPsolver::PnPsolver(const Frame &F, const vector<MapPoint*> &vpMapPointMatches):$/;"	f	class:ORB_SLAM2::PnPsolver
+Refine	PnPsolver.cc	/^bool PnPsolver::Refine()$/;"	f	class:ORB_SLAM2::PnPsolver
+SetRansacParameters	PnPsolver.cc	/^void PnPsolver::SetRansacParameters(double probability, int minInliers, int maxIterations, int minSet, float epsilon, float th2)$/;"	f	class:ORB_SLAM2::PnPsolver
+add_correspondence	PnPsolver.cc	/^void PnPsolver::add_correspondence(double X, double Y, double Z, double u, double v)$/;"	f	class:ORB_SLAM2::PnPsolver
+choose_control_points	PnPsolver.cc	/^void PnPsolver::choose_control_points(void)$/;"	f	class:ORB_SLAM2::PnPsolver
+compute_A_and_b_gauss_newton	PnPsolver.cc	/^void PnPsolver::compute_A_and_b_gauss_newton(const double * l_6x10, const double * rho,$/;"	f	class:ORB_SLAM2::PnPsolver
+compute_L_6x10	PnPsolver.cc	/^void PnPsolver::compute_L_6x10(const double * ut, double * l_6x10)$/;"	f	class:ORB_SLAM2::PnPsolver
+compute_R_and_t	PnPsolver.cc	/^double PnPsolver::compute_R_and_t(const double * ut, const double * betas,$/;"	f	class:ORB_SLAM2::PnPsolver
+compute_barycentric_coordinates	PnPsolver.cc	/^void PnPsolver::compute_barycentric_coordinates(void)$/;"	f	class:ORB_SLAM2::PnPsolver
+compute_ccs	PnPsolver.cc	/^void PnPsolver::compute_ccs(const double * betas, const double * ut)$/;"	f	class:ORB_SLAM2::PnPsolver
+compute_pcs	PnPsolver.cc	/^void PnPsolver::compute_pcs(void)$/;"	f	class:ORB_SLAM2::PnPsolver
+compute_pose	PnPsolver.cc	/^double PnPsolver::compute_pose(double R[3][3], double t[3])$/;"	f	class:ORB_SLAM2::PnPsolver
+compute_rho	PnPsolver.cc	/^void PnPsolver::compute_rho(double * rho)$/;"	f	class:ORB_SLAM2::PnPsolver
+copy_R_and_t	PnPsolver.cc	/^void PnPsolver::copy_R_and_t(const double R_src[3][3], const double t_src[3],$/;"	f	class:ORB_SLAM2::PnPsolver
+dist2	PnPsolver.cc	/^double PnPsolver::dist2(const double * p1, const double * p2)$/;"	f	class:ORB_SLAM2::PnPsolver
+dot	PnPsolver.cc	/^double PnPsolver::dot(const double * v1, const double * v2)$/;"	f	class:ORB_SLAM2::PnPsolver
+estimate_R_and_t	PnPsolver.cc	/^void PnPsolver::estimate_R_and_t(double R[3][3], double t[3])$/;"	f	class:ORB_SLAM2::PnPsolver
+fill_M	PnPsolver.cc	/^void PnPsolver::fill_M(CvMat * M,$/;"	f	class:ORB_SLAM2::PnPsolver
+find	PnPsolver.cc	/^cv::Mat PnPsolver::find(vector<bool> &vbInliers, int &nInliers)$/;"	f	class:ORB_SLAM2::PnPsolver
+find_betas_approx_1	PnPsolver.cc	/^void PnPsolver::find_betas_approx_1(const CvMat * L_6x10, const CvMat * Rho,$/;"	f	class:ORB_SLAM2::PnPsolver
+find_betas_approx_2	PnPsolver.cc	/^void PnPsolver::find_betas_approx_2(const CvMat * L_6x10, const CvMat * Rho,$/;"	f	class:ORB_SLAM2::PnPsolver
+find_betas_approx_3	PnPsolver.cc	/^void PnPsolver::find_betas_approx_3(const CvMat * L_6x10, const CvMat * Rho,$/;"	f	class:ORB_SLAM2::PnPsolver
+gauss_newton	PnPsolver.cc	/^void PnPsolver::gauss_newton(const CvMat * L_6x10, const CvMat * Rho,$/;"	f	class:ORB_SLAM2::PnPsolver
+iterate	PnPsolver.cc	/^cv::Mat PnPsolver::iterate(int nIterations, bool &bNoMore, vector<bool> &vbInliers, int &nInliers)$/;"	f	class:ORB_SLAM2::PnPsolver
+mat_to_quat	PnPsolver.cc	/^void PnPsolver::mat_to_quat(const double R[3][3], double q[4])$/;"	f	class:ORB_SLAM2::PnPsolver
+print_pose	PnPsolver.cc	/^void PnPsolver::print_pose(const double R[3][3], const double t[3])$/;"	f	class:ORB_SLAM2::PnPsolver
+qr_solve	PnPsolver.cc	/^void PnPsolver::qr_solve(CvMat * A, CvMat * b, CvMat * X)$/;"	f	class:ORB_SLAM2::PnPsolver
+relative_error	PnPsolver.cc	/^void PnPsolver::relative_error(double & rot_err, double & transl_err,$/;"	f	class:ORB_SLAM2::PnPsolver
+reprojection_error	PnPsolver.cc	/^double PnPsolver::reprojection_error(const double R[3][3], const double t[3])$/;"	f	class:ORB_SLAM2::PnPsolver
+reset_correspondences	PnPsolver.cc	/^void PnPsolver::reset_correspondences(void)$/;"	f	class:ORB_SLAM2::PnPsolver
+set_maximum_number_of_correspondences	PnPsolver.cc	/^void PnPsolver::set_maximum_number_of_correspondences(int n)$/;"	f	class:ORB_SLAM2::PnPsolver
+solve_for_sign	PnPsolver.cc	/^void PnPsolver::solve_for_sign(void)$/;"	f	class:ORB_SLAM2::PnPsolver
+~PnPsolver	PnPsolver.cc	/^PnPsolver::~PnPsolver()$/;"	f	class:ORB_SLAM2::PnPsolver
+CheckInliers	Sim3Solver.cc	/^void Sim3Solver::CheckInliers()$/;"	f	class:ORB_SLAM2::Sim3Solver
+ComputeCentroid	Sim3Solver.cc	/^void Sim3Solver::ComputeCentroid(cv::Mat &P, cv::Mat &Pr, cv::Mat &C)$/;"	f	class:ORB_SLAM2::Sim3Solver
+ComputeSim3	Sim3Solver.cc	/^void Sim3Solver::ComputeSim3(cv::Mat &P1, cv::Mat &P2)$/;"	f	class:ORB_SLAM2::Sim3Solver
+FromCameraToImage	Sim3Solver.cc	/^void Sim3Solver::FromCameraToImage(const vector<cv::Mat> &vP3Dc, vector<cv::Mat> &vP2D, cv::Mat K)$/;"	f	class:ORB_SLAM2::Sim3Solver
+GetEstimatedRotation	Sim3Solver.cc	/^cv::Mat Sim3Solver::GetEstimatedRotation()$/;"	f	class:ORB_SLAM2::Sim3Solver
+GetEstimatedScale	Sim3Solver.cc	/^float Sim3Solver::GetEstimatedScale()$/;"	f	class:ORB_SLAM2::Sim3Solver
+GetEstimatedTranslation	Sim3Solver.cc	/^cv::Mat Sim3Solver::GetEstimatedTranslation()$/;"	f	class:ORB_SLAM2::Sim3Solver
+ORB_SLAM2	Sim3Solver.cc	/^namespace ORB_SLAM2$/;"	n	file:
+Project	Sim3Solver.cc	/^void Sim3Solver::Project(const vector<cv::Mat> &vP3Dw, vector<cv::Mat> &vP2D, cv::Mat Tcw, cv::Mat K)$/;"	f	class:ORB_SLAM2::Sim3Solver
+SetRansacParameters	Sim3Solver.cc	/^void Sim3Solver::SetRansacParameters(double probability, int minInliers, int maxIterations)$/;"	f	class:ORB_SLAM2::Sim3Solver
+Sim3Solver	Sim3Solver.cc	/^Sim3Solver::Sim3Solver(KeyFrame *pKF1, KeyFrame *pKF2, const vector<MapPoint *> &vpMatched12, const bool bFixScale):$/;"	f	class:ORB_SLAM2::Sim3Solver
+find	Sim3Solver.cc	/^cv::Mat Sim3Solver::find(vector<bool> &vbInliers12, int &nInliers)$/;"	f	class:ORB_SLAM2::Sim3Solver
+iterate	Sim3Solver.cc	/^cv::Mat Sim3Solver::iterate(int nIterations, bool &bNoMore, vector<bool> &vbInliers, int &nInliers)$/;"	f	class:ORB_SLAM2::Sim3Solver
+ActivateLocalizationMode	System.cc	/^void System::ActivateLocalizationMode()$/;"	f	class:ORB_SLAM2::System
+DeactivateLocalizationMode	System.cc	/^void System::DeactivateLocalizationMode()$/;"	f	class:ORB_SLAM2::System
+ORB_SLAM2	System.cc	/^namespace ORB_SLAM2$/;"	n	file:
+Reset	System.cc	/^void System::Reset()$/;"	f	class:ORB_SLAM2::System
+SaveKeyFrameTrajectoryTUM	System.cc	/^void System::SaveKeyFrameTrajectoryTUM(const string &filename)$/;"	f	class:ORB_SLAM2::System
+SaveTrajectoryKITTI	System.cc	/^void System::SaveTrajectoryKITTI(const string &filename)$/;"	f	class:ORB_SLAM2::System
+SaveTrajectoryTUM	System.cc	/^void System::SaveTrajectoryTUM(const string &filename)$/;"	f	class:ORB_SLAM2::System
+Shutdown	System.cc	/^void System::Shutdown()$/;"	f	class:ORB_SLAM2::System
+System	System.cc	/^System::System(const string &strVocFile, const string &strSettingsFile, const eSensor sensor,$/;"	f	class:ORB_SLAM2::System
+TrackMonocular	System.cc	/^cv::Mat System::TrackMonocular(const cv::Mat &im, const double &timestamp)$/;"	f	class:ORB_SLAM2::System
+TrackRGBD	System.cc	/^cv::Mat System::TrackRGBD(const cv::Mat &im, const cv::Mat &depthmap, const double &timestamp)$/;"	f	class:ORB_SLAM2::System
+TrackStereo	System.cc	/^cv::Mat System::TrackStereo(const cv::Mat &imLeft, const cv::Mat &imRight, const double &timestamp)$/;"	f	class:ORB_SLAM2::System
+ChangeCalibration	Tracking.cc	/^void Tracking::ChangeCalibration(const string &strSettingPath)$/;"	f	class:ORB_SLAM2::Tracking
+CheckReplacedInLastFrame	Tracking.cc	/^void Tracking::CheckReplacedInLastFrame()$/;"	f	class:ORB_SLAM2::Tracking
+CreateInitialMapMonocular	Tracking.cc	/^void Tracking::CreateInitialMapMonocular()$/;"	f	class:ORB_SLAM2::Tracking
+CreateNewKeyFrame	Tracking.cc	/^void Tracking::CreateNewKeyFrame()$/;"	f	class:ORB_SLAM2::Tracking
+GrabImageMonocular	Tracking.cc	/^cv::Mat Tracking::GrabImageMonocular(const cv::Mat &im, const double &timestamp)$/;"	f	class:ORB_SLAM2::Tracking
+GrabImageRGBD	Tracking.cc	/^cv::Mat Tracking::GrabImageRGBD(const cv::Mat &imRGB,const cv::Mat &imD, const double &timestamp)$/;"	f	class:ORB_SLAM2::Tracking
+GrabImageStereo	Tracking.cc	/^cv::Mat Tracking::GrabImageStereo(const cv::Mat &imRectLeft, const cv::Mat &imRectRight, const double &timestamp)$/;"	f	class:ORB_SLAM2::Tracking
+InformOnlyTracking	Tracking.cc	/^void Tracking::InformOnlyTracking(const bool &flag)$/;"	f	class:ORB_SLAM2::Tracking
+MonocularInitialization	Tracking.cc	/^void Tracking::MonocularInitialization()$/;"	f	class:ORB_SLAM2::Tracking
+NeedNewKeyFrame	Tracking.cc	/^bool Tracking::NeedNewKeyFrame()$/;"	f	class:ORB_SLAM2::Tracking
+ORB_SLAM2	Tracking.cc	/^namespace ORB_SLAM2$/;"	n	file:
+Relocalization	Tracking.cc	/^bool Tracking::Relocalization()$/;"	f	class:ORB_SLAM2::Tracking
+Reset	Tracking.cc	/^void Tracking::Reset()$/;"	f	class:ORB_SLAM2::Tracking
+SearchLocalPoints	Tracking.cc	/^void Tracking::SearchLocalPoints()$/;"	f	class:ORB_SLAM2::Tracking
+SetLocalMapper	Tracking.cc	/^void Tracking::SetLocalMapper(LocalMapping *pLocalMapper)$/;"	f	class:ORB_SLAM2::Tracking
+SetLoopClosing	Tracking.cc	/^void Tracking::SetLoopClosing(LoopClosing *pLoopClosing)$/;"	f	class:ORB_SLAM2::Tracking
+SetViewer	Tracking.cc	/^void Tracking::SetViewer(Viewer *pViewer)$/;"	f	class:ORB_SLAM2::Tracking
+StereoInitialization	Tracking.cc	/^void Tracking::StereoInitialization()$/;"	f	class:ORB_SLAM2::Tracking
+Track	Tracking.cc	/^void Tracking::Track()$/;"	f	class:ORB_SLAM2::Tracking
+TrackLocalMap	Tracking.cc	/^bool Tracking::TrackLocalMap()$/;"	f	class:ORB_SLAM2::Tracking
+TrackReferenceKeyFrame	Tracking.cc	/^bool Tracking::TrackReferenceKeyFrame()$/;"	f	class:ORB_SLAM2::Tracking
+TrackWithMotionModel	Tracking.cc	/^bool Tracking::TrackWithMotionModel()$/;"	f	class:ORB_SLAM2::Tracking
+Tracking	Tracking.cc	/^Tracking::Tracking(System *pSys, ORBVocabulary* pVoc, FrameDrawer *pFrameDrawer, MapDrawer *pMapDrawer, Map *pMap, KeyFrameDatabase* pKFDB, const string &strSettingPath, const int sensor):$/;"	f	class:ORB_SLAM2::Tracking
+UpdateLastFrame	Tracking.cc	/^void Tracking::UpdateLastFrame()$/;"	f	class:ORB_SLAM2::Tracking
+UpdateLocalKeyFrames	Tracking.cc	/^void Tracking::UpdateLocalKeyFrames()$/;"	f	class:ORB_SLAM2::Tracking
+UpdateLocalMap	Tracking.cc	/^void Tracking::UpdateLocalMap()$/;"	f	class:ORB_SLAM2::Tracking
+UpdateLocalPoints	Tracking.cc	/^void Tracking::UpdateLocalPoints()$/;"	f	class:ORB_SLAM2::Tracking
+CheckFinish	Viewer.cc	/^bool Viewer::CheckFinish()$/;"	f	class:ORB_SLAM2::Viewer
+ORB_SLAM2	Viewer.cc	/^namespace ORB_SLAM2$/;"	n	file:
+Release	Viewer.cc	/^void Viewer::Release()$/;"	f	class:ORB_SLAM2::Viewer
+RequestFinish	Viewer.cc	/^void Viewer::RequestFinish()$/;"	f	class:ORB_SLAM2::Viewer
+RequestStop	Viewer.cc	/^void Viewer::RequestStop()$/;"	f	class:ORB_SLAM2::Viewer
+Run	Viewer.cc	/^void Viewer::Run()$/;"	f	class:ORB_SLAM2::Viewer
+SetFinish	Viewer.cc	/^void Viewer::SetFinish()$/;"	f	class:ORB_SLAM2::Viewer
+Stop	Viewer.cc	/^bool Viewer::Stop()$/;"	f	class:ORB_SLAM2::Viewer
+Viewer	Viewer.cc	/^Viewer::Viewer(System* pSystem, FrameDrawer *pFrameDrawer, MapDrawer *pMapDrawer, Tracking *pTracking, const string &strSettingPath):$/;"	f	class:ORB_SLAM2::Viewer
+isFinished	Viewer.cc	/^bool Viewer::isFinished()$/;"	f	class:ORB_SLAM2::Viewer
+isStopped	Viewer.cc	/^bool Viewer::isStopped()$/;"	f	class:ORB_SLAM2::Viewer
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
