@@ -101,6 +101,8 @@ Tracking::Tracking(System *pSys, ORBVocabulary *pVoc, FrameDrawer *pFrameDrawer,
 
   int nRGB = fSettings["Camera.RGB"];
   mbRGB = nRGB;
+
+  velocitySum = 0.0;
   //
   // if (mbRGB)
   //   cout << "- color order: RGB (ignored if grayscale)" << endl;
@@ -386,13 +388,17 @@ void Tracking::Track() {
         vector<float> eu = Converter::toEuler(
             mCurrentFrame.mTcw.rowRange(0, 3).colRange(0, 3).t());
 
-        std::cout << "V of frame: " << mCurrentFrame.mnId << std::endl
-                  << "  " << mVelocity.rowRange(0, 3).col(3) << std::endl
-                  << "angle : " << mVelocity.at(2, 3)
-                  << " compared to: " << LastTwc.at(2, 3) << std::endl
-                  << "Roll:  " << eu[0] << "  Pitch(road): " << eu[1]
-                  << "  Yaw(rotate): " << eu[2] << std::endl
-                  << std::endl;
+        velocitySum += mVelocity.at<float>(2, 3);
+        if (mCurrentFrame.mnId % 20 == 1) {
+          std::cout << "V of frame: " << mCurrentFrame.mnId << std::endl
+                    << "Velocity:  " << velocitySum * 56 / (-2) << std::endl
+                    << "angle : " << std::endl
+                    // << " compared to: " << LastTwc.at(2, 3) << std::endl
+                    << "Roll:  " << eu[0] << "  Pitch(road): " << eu[1]
+                    << "  Yaw(rotate): " << eu[2] << std::endl
+                    << std::endl;
+          velocitySum = 0;
+        }
       } else
         mVelocity = cv::Mat();
 
