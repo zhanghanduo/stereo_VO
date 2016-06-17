@@ -393,7 +393,6 @@ void Tracking::Track() {
           std::cout << "V of frame: " << mCurrentFrame.mnId << std::endl
                     << "Velocity:  " << velocitySum * 56 / (-2) << std::endl
                     << "angle : " << std::endl
-                    // << " compared to: " << LastTwc.at(2, 3) << std::endl
                     << "Roll:  " << eu[0] << "  Pitch(road): " << eu[1]
                     << "  Yaw(rotate): " << eu[2] << std::endl
                     << std::endl;
