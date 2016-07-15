@@ -78,9 +78,5 @@ SET(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 SET(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/ORB_SLAM2.dir/DependInfo.cmake"
-  "CMakeFiles/mono_kitti.dir/DependInfo.cmake"
-  "CMakeFiles/mono_tum.dir/DependInfo.cmake"
-  "CMakeFiles/rgbd_tum.dir/DependInfo.cmake"
-  "CMakeFiles/stereo_kitti.dir/DependInfo.cmake"
+  "CMakeFiles/Stereo_VO.dir/DependInfo.cmake"
   )

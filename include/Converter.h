@@ -3,7 +3,7 @@
 *
 * Copyright (C) 2014-2016 Raúl Mur-Artal <raulmur at unizar dot es> (University
 * of Zaragoza)
-* For more information see <https://github.com/raulmur/ORB_SLAM2>
+* For more information see <https://github.com/raulmur/Stereo_VO>
 *
 * ORB-SLAM2 is free software: you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by
@@ -30,7 +30,7 @@
 // #include <math>
 const float PI = 3.14159265358979323846264f;
 
-namespace ORB_SLAM2 {
+namespace Stereo_VO {
 
 class Converter {
 public:

@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/zh/projects/stereo_VO/Examples/ROS/build/devel/setup.sh

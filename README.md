@@ -1,27 +1,10 @@
 # Stereo_VO
 **Authors:**
-[Zhang Handuo](hzhang032@e.ntu.edu.sg), [Raul Mur-Artal](http://webdiis.unizar.es/~raulmur/) ([ORBSLAM2](https://github.com/raulmur/ORB_SLAM2)), and [Dorian Galvez-Lopez](http://doriangalvez.com/) ([DBoW2](https://github.com/dorian3d/DBoW2))
+[Zhang Handuo](hzhang032@e.ntu.edu.sg), [Raul Mur-Artal](http://webdiis.unizar.es/~raulmur/) ([ORBSLAM2](https://github.com/raulmur/Stereo_VO)), and [Dorian Galvez-Lopez](http://doriangalvez.com/) ([DBoW2](https://github.com/dorian3d/DBoW2))
 
 **Current version:** 1.0.0
 
 Stereo_VO is a real-time VO library for **Stereo** cameras that computes the camera trajectory and a sparse 3D reconstruction. It is able to detect loops and relocalize the camera in real time.
-
-#####Videos showing ORB-SLAM2:
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=dF7_I2Lin54
-" target="_blank"><img src="http://img.youtube.com/vi/dF7_I2Lin54/0.jpg"
-alt="Tsukuba Dataset" width="240" height="180" border="10" /></a>
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=51NQvg5n-FE
-" target="_blank"><img src="http://img.youtube.com/vi/51NQvg5n-FE/0.jpg"
-alt="KITTI Dataset" width="240" height="180" border="10" /></a>
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=LnbAI-o7YHk
-" target="_blank"><img src="http://img.youtube.com/vi/LnbAI-o7YHk/0.jpg"
-alt="TUM RGBD Dataset" width="240" height="180" border="10" /></a>
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=MUyNOEICrf8
-" target="_blank"><img src="http://img.youtube.com/vi/MUyNOEICrf8/0.jpg"
-alt="EuRoC Dataset (V1_02, V1_03)" width="240" height="180" border="10" /></a>
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=xXt90wZejwk
-" target="_blank"><img src="http://img.youtube.com/vi/xXt90wZejwk/0.jpg"
-alt="EuRoC Dataset (V1_02, V1_03)" width="240" height="180" border="10" /></a>
 
 ###Related Publications:
 
@@ -58,66 +41,50 @@ We use modified versions of the [DBoW2](https://github.com/dorian3d/DBoW2) libra
 ## ROS
 A version Hydro or newer is needed.
 
-#3. Building ORB-SLAM2 library and TUM/KITTI examples
+# 1. Clone the repository:
 
-Clone the repository:
 ```
-git clone https://github.com/christlurker/VO_ugv.git ORB_SLAM2
+git clone https://github.com/christlurker/VO_ugv.git Stereo_VO
 ```
 
-We provide a script `build.sh` to build the *Thirdparty* libraries and *ORB-SLAM2*. Please make sure you have installed all required dependencies (see section 2). Execute:
+# 2. ROS Examples
+
+### Building the nodes for mono, stereo
+1. Add the path including *Examples/ROS/Stereo_VO* to the ROS_PACKAGE_PATH environment variable. Open .bashrc file and add at the end the following line. Replace PATH by the folder where you cloned Stereo_VO:
+
+  ```
+  export ROS_PACKAGE_PATH=${ROS_PACKAGE_PATH}:PATH/Stereo_VO/Examples/ROS
+  ```
+
+2. Build stereo_VO library and ROS Examples
+
+We provide a script `build.sh` to build the *Thirdparty* libraries and *stereo_VO*. Please make sure you have installed all required dependencies (see section 2). Execute:
 ```
-cd ORB_SLAM2
+cd Stereo_VO
 chmod +x build.sh
 ./build.sh
 ```
 
-This will create **libORB_SLAM.so**  at *lib* folder.
-
-
-#4. ROS Examples
-
-### Building the nodes for mono, stereo
-1. Add the path including *Examples/ROS/ORB_SLAM2* to the ROS_PACKAGE_PATH environment variable. Open .bashrc file and add at the end the following line. Replace PATH by the folder where you cloned ORB_SLAM2:
-
-  ```
-  export ROS_PACKAGE_PATH=${ROS_PACKAGE_PATH}:PATH/ORB_SLAM2/Examples/ROS
-  ```
-
-2. Go to *Examples/ROS/ORB_SLAM2* folder and execute:
-
-  ```
-  mkdir build
-  cd build
-  cmake .. -DROS_BUILD_TYPE=Release
-  make -j
-  ```
-
-### Running Monocular Node
-For a monocular input from topic `/camera/image_raw` run node ORB_SLAM2/Mono. You will need to provide the vocabulary file and a settings file. See the monocular examples above.
-
-  ```
-  rosrun ORB_SLAM2 Mono PATH_TO_VOCABULARY PATH_TO_SETTINGS_FILE
-  ```
+This will create **libstero_VO.so**  at *lib* folder.
 
 ### Running Stereo Node
-For a stereo input from topic `/camera/left/image_raw` and `/camera/right/image_raw` run node ORB_SLAM2/Stereo. You will need to provide the vocabulary file and a settings file. If you **provide rectification matrices** (see Examples/Stereo/EuRoC.yaml example), the node will recitify the images online, **otherwise images must be pre-rectified**.
+For a stereo input from topic `/camera/left/image_raw` and `/camera/right/image_raw` run node Stereo_VO/Stereo. You will need to provide the vocabulary file and a settings file. If you **provide rectification matrices** (see Examples/Stereo/EuRoC.yaml example), the node will recitify the images online, **otherwise images must be pre-rectified**.
 
   ```
-  rosrun ORB_SLAM2 Stereo PATH_TO_VOCABULARY PATH_TO_SETTINGS_FILE ONLINE_RECTIFICATION
+  rosrun Stereo_VO Stereo
   ```
 
-**Example**: Download a rosbag (e.g. V1_01_easy.bag) from the EuRoC dataset (http://projects.asl.ethz.ch/datasets/doku.php?id=kmavvisualinertialdatasets). Open 3 tabs on the terminal and run the following command at each tab:
+**Example**: A rosbag (e.g. V1_01_easy.bag). Open 3 tabs on the terminal and run the following command at each tab:
   ```
   roscore
   ```
 
   ```
-  rosrun ORB_SLAM2 Stereo Vocabulary/ORBvoc.txt Examples/Stereo/EuRoC.yaml true
+  rosrun Stereo_VO Stereo
   ```
 
   ```
   rosbag play --pause V1_01_easy.bag /cam0/image_raw:=/camera/left/image_raw /cam1/image_raw:=/camera/right/image_raw
   ```
 
-Once ORB-SLAM2 has loaded the vocabulary, press space in the rosbag tab. Enjoy!. Note: a powerful computer is required to run the most exigent sequences of this dataset.
+Once stereo_VO has loaded the vocabulary, press space in the rosbag tab. Enjoy!. Note: a powerful computer is required to run the most exigent sequences of this dataset.

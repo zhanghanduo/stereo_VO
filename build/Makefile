@@ -42,10 +42,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zh/VO/ORB_SLAM2
+CMAKE_SOURCE_DIR = /home/zh/projects/stereo_VO
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zh/VO/ORB_SLAM2/build
+CMAKE_BINARY_DIR = /home/zh/projects/stereo_VO/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -72,9 +72,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zh/VO/ORB_SLAM2/build/CMakeFiles /home/zh/VO/ORB_SLAM2/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zh/projects/stereo_VO/build/CMakeFiles /home/zh/projects/stereo_VO/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zh/VO/ORB_SLAM2/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zh/projects/stereo_VO/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -102,172 +102,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named ORB_SLAM2
+# Target rules for targets named Stereo_VO
 
 # Build rule for target.
-ORB_SLAM2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ORB_SLAM2
-.PHONY : ORB_SLAM2
+Stereo_VO: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Stereo_VO
+.PHONY : Stereo_VO
 
 # fast build rule for target.
-ORB_SLAM2/fast:
-	$(MAKE) -f CMakeFiles/ORB_SLAM2.dir/build.make CMakeFiles/ORB_SLAM2.dir/build
-.PHONY : ORB_SLAM2/fast
-
-#=============================================================================
-# Target rules for targets named mono_kitti
-
-# Build rule for target.
-mono_kitti: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 mono_kitti
-.PHONY : mono_kitti
-
-# fast build rule for target.
-mono_kitti/fast:
-	$(MAKE) -f CMakeFiles/mono_kitti.dir/build.make CMakeFiles/mono_kitti.dir/build
-.PHONY : mono_kitti/fast
-
-#=============================================================================
-# Target rules for targets named mono_tum
-
-# Build rule for target.
-mono_tum: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 mono_tum
-.PHONY : mono_tum
-
-# fast build rule for target.
-mono_tum/fast:
-	$(MAKE) -f CMakeFiles/mono_tum.dir/build.make CMakeFiles/mono_tum.dir/build
-.PHONY : mono_tum/fast
-
-#=============================================================================
-# Target rules for targets named rgbd_tum
-
-# Build rule for target.
-rgbd_tum: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rgbd_tum
-.PHONY : rgbd_tum
-
-# fast build rule for target.
-rgbd_tum/fast:
-	$(MAKE) -f CMakeFiles/rgbd_tum.dir/build.make CMakeFiles/rgbd_tum.dir/build
-.PHONY : rgbd_tum/fast
-
-#=============================================================================
-# Target rules for targets named stereo_kitti
-
-# Build rule for target.
-stereo_kitti: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 stereo_kitti
-.PHONY : stereo_kitti
-
-# fast build rule for target.
-stereo_kitti/fast:
-	$(MAKE) -f CMakeFiles/stereo_kitti.dir/build.make CMakeFiles/stereo_kitti.dir/build
-.PHONY : stereo_kitti/fast
-
-Examples/Monocular/mono_kitti.o: Examples/Monocular/mono_kitti.cc.o
-.PHONY : Examples/Monocular/mono_kitti.o
-
-# target to build an object file
-Examples/Monocular/mono_kitti.cc.o:
-	$(MAKE) -f CMakeFiles/mono_kitti.dir/build.make CMakeFiles/mono_kitti.dir/Examples/Monocular/mono_kitti.cc.o
-.PHONY : Examples/Monocular/mono_kitti.cc.o
-
-Examples/Monocular/mono_kitti.i: Examples/Monocular/mono_kitti.cc.i
-.PHONY : Examples/Monocular/mono_kitti.i
-
-# target to preprocess a source file
-Examples/Monocular/mono_kitti.cc.i:
-	$(MAKE) -f CMakeFiles/mono_kitti.dir/build.make CMakeFiles/mono_kitti.dir/Examples/Monocular/mono_kitti.cc.i
-.PHONY : Examples/Monocular/mono_kitti.cc.i
-
-Examples/Monocular/mono_kitti.s: Examples/Monocular/mono_kitti.cc.s
-.PHONY : Examples/Monocular/mono_kitti.s
-
-# target to generate assembly for a file
-Examples/Monocular/mono_kitti.cc.s:
-	$(MAKE) -f CMakeFiles/mono_kitti.dir/build.make CMakeFiles/mono_kitti.dir/Examples/Monocular/mono_kitti.cc.s
-.PHONY : Examples/Monocular/mono_kitti.cc.s
-
-Examples/Monocular/mono_tum.o: Examples/Monocular/mono_tum.cc.o
-.PHONY : Examples/Monocular/mono_tum.o
-
-# target to build an object file
-Examples/Monocular/mono_tum.cc.o:
-	$(MAKE) -f CMakeFiles/mono_tum.dir/build.make CMakeFiles/mono_tum.dir/Examples/Monocular/mono_tum.cc.o
-.PHONY : Examples/Monocular/mono_tum.cc.o
-
-Examples/Monocular/mono_tum.i: Examples/Monocular/mono_tum.cc.i
-.PHONY : Examples/Monocular/mono_tum.i
-
-# target to preprocess a source file
-Examples/Monocular/mono_tum.cc.i:
-	$(MAKE) -f CMakeFiles/mono_tum.dir/build.make CMakeFiles/mono_tum.dir/Examples/Monocular/mono_tum.cc.i
-.PHONY : Examples/Monocular/mono_tum.cc.i
-
-Examples/Monocular/mono_tum.s: Examples/Monocular/mono_tum.cc.s
-.PHONY : Examples/Monocular/mono_tum.s
-
-# target to generate assembly for a file
-Examples/Monocular/mono_tum.cc.s:
-	$(MAKE) -f CMakeFiles/mono_tum.dir/build.make CMakeFiles/mono_tum.dir/Examples/Monocular/mono_tum.cc.s
-.PHONY : Examples/Monocular/mono_tum.cc.s
-
-Examples/RGB-D/rgbd_tum.o: Examples/RGB-D/rgbd_tum.cc.o
-.PHONY : Examples/RGB-D/rgbd_tum.o
-
-# target to build an object file
-Examples/RGB-D/rgbd_tum.cc.o:
-	$(MAKE) -f CMakeFiles/rgbd_tum.dir/build.make CMakeFiles/rgbd_tum.dir/Examples/RGB-D/rgbd_tum.cc.o
-.PHONY : Examples/RGB-D/rgbd_tum.cc.o
-
-Examples/RGB-D/rgbd_tum.i: Examples/RGB-D/rgbd_tum.cc.i
-.PHONY : Examples/RGB-D/rgbd_tum.i
-
-# target to preprocess a source file
-Examples/RGB-D/rgbd_tum.cc.i:
-	$(MAKE) -f CMakeFiles/rgbd_tum.dir/build.make CMakeFiles/rgbd_tum.dir/Examples/RGB-D/rgbd_tum.cc.i
-.PHONY : Examples/RGB-D/rgbd_tum.cc.i
-
-Examples/RGB-D/rgbd_tum.s: Examples/RGB-D/rgbd_tum.cc.s
-.PHONY : Examples/RGB-D/rgbd_tum.s
-
-# target to generate assembly for a file
-Examples/RGB-D/rgbd_tum.cc.s:
-	$(MAKE) -f CMakeFiles/rgbd_tum.dir/build.make CMakeFiles/rgbd_tum.dir/Examples/RGB-D/rgbd_tum.cc.s
-.PHONY : Examples/RGB-D/rgbd_tum.cc.s
-
-Examples/Stereo/stereo_kitti.o: Examples/Stereo/stereo_kitti.cc.o
-.PHONY : Examples/Stereo/stereo_kitti.o
-
-# target to build an object file
-Examples/Stereo/stereo_kitti.cc.o:
-	$(MAKE) -f CMakeFiles/stereo_kitti.dir/build.make CMakeFiles/stereo_kitti.dir/Examples/Stereo/stereo_kitti.cc.o
-.PHONY : Examples/Stereo/stereo_kitti.cc.o
-
-Examples/Stereo/stereo_kitti.i: Examples/Stereo/stereo_kitti.cc.i
-.PHONY : Examples/Stereo/stereo_kitti.i
-
-# target to preprocess a source file
-Examples/Stereo/stereo_kitti.cc.i:
-	$(MAKE) -f CMakeFiles/stereo_kitti.dir/build.make CMakeFiles/stereo_kitti.dir/Examples/Stereo/stereo_kitti.cc.i
-.PHONY : Examples/Stereo/stereo_kitti.cc.i
-
-Examples/Stereo/stereo_kitti.s: Examples/Stereo/stereo_kitti.cc.s
-.PHONY : Examples/Stereo/stereo_kitti.s
-
-# target to generate assembly for a file
-Examples/Stereo/stereo_kitti.cc.s:
-	$(MAKE) -f CMakeFiles/stereo_kitti.dir/build.make CMakeFiles/stereo_kitti.dir/Examples/Stereo/stereo_kitti.cc.s
-.PHONY : Examples/Stereo/stereo_kitti.cc.s
+Stereo_VO/fast:
+	$(MAKE) -f CMakeFiles/Stereo_VO.dir/build.make CMakeFiles/Stereo_VO.dir/build
+.PHONY : Stereo_VO/fast
 
 src/Converter.o: src/Converter.cc.o
 .PHONY : src/Converter.o
 
 # target to build an object file
 src/Converter.cc.o:
-	$(MAKE) -f CMakeFiles/ORB_SLAM2.dir/build.make CMakeFiles/ORB_SLAM2.dir/src/Converter.cc.o
+	$(MAKE) -f CMakeFiles/Stereo_VO.dir/build.make CMakeFiles/Stereo_VO.dir/src/Converter.cc.o
 .PHONY : src/Converter.cc.o
 
 src/Converter.i: src/Converter.cc.i
@@ -275,7 +127,7 @@ src/Converter.i: src/Converter.cc.i
 
 # target to preprocess a source file
 src/Converter.cc.i:
-	$(MAKE) -f CMakeFiles/ORB_SLAM2.dir/build.make CMakeFiles/ORB_SLAM2.dir/src/Converter.cc.i
+	$(MAKE) -f CMakeFiles/Stereo_VO.dir/build.make CMakeFiles/Stereo_VO.dir/src/Converter.cc.i
 .PHONY : src/Converter.cc.i
 
 src/Converter.s: src/Converter.cc.s
@@ -283,7 +135,7 @@ src/Converter.s: src/Converter.cc.s
 
 # target to generate assembly for a file
 src/Converter.cc.s:
-	$(MAKE) -f CMakeFiles/ORB_SLAM2.dir/build.make CMakeFiles/ORB_SLAM2.dir/src/Converter.cc.s
+	$(MAKE) -f CMakeFiles/Stereo_VO.dir/build.make CMakeFiles/Stereo_VO.dir/src/Converter.cc.s
 .PHONY : src/Converter.cc.s
 
 src/Frame.o: src/Frame.cc.o
@@ -291,7 +143,7 @@ src/Frame.o: src/Frame.cc.o
 
 # target to build an object file
 src/Frame.cc.o:
-	$(MAKE) -f CMakeFiles/ORB_SLAM2.dir/build.make CMakeFiles/ORB_SLAM2.dir/src/Frame.cc.o
+	$(MAKE) -f CMakeFiles/Stereo_VO.dir/build.make CMakeFiles/Stereo_VO.dir/src/Frame.cc.o
 .PHONY : src/Frame.cc.o
 
 src/Frame.i: src/Frame.cc.i
@@ -299,7 +151,7 @@ src/Frame.i: src/Frame.cc.i
 
 # target to preprocess a source file
 src/Frame.cc.i:
-	$(MAKE) -f CMakeFiles/ORB_SLAM2.dir/build.make CMakeFiles/ORB_SLAM2.dir/src/Frame.cc.i
+	$(MAKE) -f CMakeFiles/Stereo_VO.dir/build.make CMakeFiles/Stereo_VO.dir/src/Frame.cc.i
 .PHONY : src/Frame.cc.i
 
 src/Frame.s: src/Frame.cc.s
@@ -307,7 +159,7 @@ src/Frame.s: src/Frame.cc.s
 
 # target to generate assembly for a file
 src/Frame.cc.s:
-	$(MAKE) -f CMakeFiles/ORB_SLAM2.dir/build.make CMakeFiles/ORB_SLAM2.dir/src/Frame.cc.s
+	$(MAKE) -f CMakeFiles/Stereo_VO.dir/build.make CMakeFiles/Stereo_VO.dir/src/Frame.cc.s
 .PHONY : src/Frame.cc.s
 
 src/FrameDrawer.o: src/FrameDrawer.cc.o
@@ -315,7 +167,7 @@ src/FrameDrawer.o: src/FrameDrawer.cc.o
 
 # target to build an object file
 src/FrameDrawer.cc.o:
-	$(MAKE) -f CMakeFiles/ORB_SLAM2.dir/build.make CMakeFiles/ORB_SLAM2.dir/src/FrameDrawer.cc.o
+	$(MAKE) -f CMakeFiles/Stereo_VO.dir/build.make CMakeFiles/Stereo_VO.dir/src/FrameDrawer.cc.o
 .PHONY : src/FrameDrawer.cc.o
 
 src/FrameDrawer.i: src/FrameDrawer.cc.i
@@ -323,7 +175,7 @@ src/FrameDrawer.i: src/FrameDrawer.cc.i
 
 # target to preprocess a source file
 src/FrameDrawer.cc.i:
-	$(MAKE) -f CMakeFiles/ORB_SLAM2.dir/build.make CMakeFiles/ORB_SLAM2.dir/src/FrameDrawer.cc.i
+	$(MAKE) -f CMakeFiles/Stereo_VO.dir/build.make CMakeFiles/Stereo_VO.dir/src/FrameDrawer.cc.i
 .PHONY : src/FrameDrawer.cc.i
 
 src/FrameDrawer.s: src/FrameDrawer.cc.s
@@ -331,7 +183,7 @@ src/FrameDrawer.s: src/FrameDrawer.cc.s
 
 # target to generate assembly for a file
 src/FrameDrawer.cc.s:
-	$(MAKE) -f CMakeFiles/ORB_SLAM2.dir/build.make CMakeFiles/ORB_SLAM2.dir/src/FrameDrawer.cc.s
+	$(MAKE) -f CMakeFiles/Stereo_VO.dir/build.make CMakeFiles/Stereo_VO.dir/src/FrameDrawer.cc.s
 .PHONY : src/FrameDrawer.cc.s
 
 src/Initializer.o: src/Initializer.cc.o
@@ -339,7 +191,7 @@ src/Initializer.o: src/Initializer.cc.o
 
 # target to build an object file
 src/Initializer.cc.o:
-	$(MAKE) -f CMakeFiles/ORB_SLAM2.dir/build.make CMakeFiles/ORB_SLAM2.dir/src/Initializer.cc.o
+	$(MAKE) -f CMakeFiles/Stereo_VO.dir/build.make CMakeFiles/Stereo_VO.dir/src/Initializer.cc.o
 .PHONY : src/Initializer.cc.o
 
 src/Initializer.i: src/Initializer.cc.i
@@ -347,7 +199,7 @@ src/Initializer.i: src/Initializer.cc.i
 
 # target to preprocess a source file
 src/Initializer.cc.i:
-	$(MAKE) -f CMakeFiles/ORB_SLAM2.dir/build.make CMakeFiles/ORB_SLAM2.dir/src/Initializer.cc.i
+	$(MAKE) -f CMakeFiles/Stereo_VO.dir/build.make CMakeFiles/Stereo_VO.dir/src/Initializer.cc.i
 .PHONY : src/Initializer.cc.i
 
 src/Initializer.s: src/Initializer.cc.s
@@ -355,7 +207,7 @@ src/Initializer.s: src/Initializer.cc.s
 
 # target to generate assembly for a file
 src/Initializer.cc.s:
-	$(MAKE) -f CMakeFiles/ORB_SLAM2.dir/build.make CMakeFiles/ORB_SLAM2.dir/src/Initializer.cc.s
+	$(MAKE) -f CMakeFiles/Stereo_VO.dir/build.make CMakeFiles/Stereo_VO.dir/src/Initializer.cc.s
 .PHONY : src/Initializer.cc.s
 
 src/KeyFrame.o: src/KeyFrame.cc.o
@@ -363,7 +215,7 @@ src/KeyFrame.o: src/KeyFrame.cc.o
 
 # target to build an object file
 src/KeyFrame.cc.o:
-	$(MAKE) -f CMakeFiles/ORB_SLAM2.dir/build.make CMakeFiles/ORB_SLAM2.dir/src/KeyFrame.cc.o
+	$(MAKE) -f CMakeFiles/Stereo_VO.dir/build.make CMakeFiles/Stereo_VO.dir/src/KeyFrame.cc.o
 .PHONY : src/KeyFrame.cc.o
 
 src/KeyFrame.i: src/KeyFrame.cc.i
@@ -371,7 +223,7 @@ src/KeyFrame.i: src/KeyFrame.cc.i
 
 # target to preprocess a source file
 src/KeyFrame.cc.i:
-	$(MAKE) -f CMakeFiles/ORB_SLAM2.dir/build.make CMakeFiles/ORB_SLAM2.dir/src/KeyFrame.cc.i
+	$(MAKE) -f CMakeFiles/Stereo_VO.dir/build.make CMakeFiles/Stereo_VO.dir/src/KeyFrame.cc.i
 .PHONY : src/KeyFrame.cc.i
 
 src/KeyFrame.s: src/KeyFrame.cc.s
@@ -379,7 +231,7 @@ src/KeyFrame.s: src/KeyFrame.cc.s
 
 # target to generate assembly for a file
 src/KeyFrame.cc.s:
-	$(MAKE) -f CMakeFiles/ORB_SLAM2.dir/build.make CMakeFiles/ORB_SLAM2.dir/src/KeyFrame.cc.s
+	$(MAKE) -f CMakeFiles/Stereo_VO.dir/build.make CMakeFiles/Stereo_VO.dir/src/KeyFrame.cc.s
 .PHONY : src/KeyFrame.cc.s
 
 src/KeyFrameDatabase.o: src/KeyFrameDatabase.cc.o
@@ -387,7 +239,7 @@ src/KeyFrameDatabase.o: src/KeyFrameDatabase.cc.o
 
 # target to build an object file
 src/KeyFrameDatabase.cc.o:
-	$(MAKE) -f CMakeFiles/ORB_SLAM2.dir/build.make CMakeFiles/ORB_SLAM2.dir/src/KeyFrameDatabase.cc.o
+	$(MAKE) -f CMakeFiles/Stereo_VO.dir/build.make CMakeFiles/Stereo_VO.dir/src/KeyFrameDatabase.cc.o
 .PHONY : src/KeyFrameDatabase.cc.o
 
 src/KeyFrameDatabase.i: src/KeyFrameDatabase.cc.i
@@ -395,7 +247,7 @@ src/KeyFrameDatabase.i: src/KeyFrameDatabase.cc.i
 
 # target to preprocess a source file
 src/KeyFrameDatabase.cc.i:
-	$(MAKE) -f CMakeFiles/ORB_SLAM2.dir/build.make CMakeFiles/ORB_SLAM2.dir/src/KeyFrameDatabase.cc.i
+	$(MAKE) -f CMakeFiles/Stereo_VO.dir/build.make CMakeFiles/Stereo_VO.dir/src/KeyFrameDatabase.cc.i
 .PHONY : src/KeyFrameDatabase.cc.i
 
 src/KeyFrameDatabase.s: src/KeyFrameDatabase.cc.s
@@ -403,7 +255,7 @@ src/KeyFrameDatabase.s: src/KeyFrameDatabase.cc.s
 
 # target to generate assembly for a file
 src/KeyFrameDatabase.cc.s:
-	$(MAKE) -f CMakeFiles/ORB_SLAM2.dir/build.make CMakeFiles/ORB_SLAM2.dir/src/KeyFrameDatabase.cc.s
+	$(MAKE) -f CMakeFiles/Stereo_VO.dir/build.make CMakeFiles/Stereo_VO.dir/src/KeyFrameDatabase.cc.s
 .PHONY : src/KeyFrameDatabase.cc.s
 
 src/LocalMapping.o: src/LocalMapping.cc.o
@@ -411,7 +263,7 @@ src/LocalMapping.o: src/LocalMapping.cc.o
 
 # target to build an object file
 src/LocalMapping.cc.o:
-	$(MAKE) -f CMakeFiles/ORB_SLAM2.dir/build.make CMakeFiles/ORB_SLAM2.dir/src/LocalMapping.cc.o
+	$(MAKE) -f CMakeFiles/Stereo_VO.dir/build.make CMakeFiles/Stereo_VO.dir/src/LocalMapping.cc.o
 .PHONY : src/LocalMapping.cc.o
 
 src/LocalMapping.i: src/LocalMapping.cc.i
@@ -419,7 +271,7 @@ src/LocalMapping.i: src/LocalMapping.cc.i
 
 # target to preprocess a source file
 src/LocalMapping.cc.i:
-	$(MAKE) -f CMakeFiles/ORB_SLAM2.dir/build.make CMakeFiles/ORB_SLAM2.dir/src/LocalMapping.cc.i
+	$(MAKE) -f CMakeFiles/Stereo_VO.dir/build.make CMakeFiles/Stereo_VO.dir/src/LocalMapping.cc.i
 .PHONY : src/LocalMapping.cc.i
 
 src/LocalMapping.s: src/LocalMapping.cc.s
@@ -427,7 +279,7 @@ src/LocalMapping.s: src/LocalMapping.cc.s
 
 # target to generate assembly for a file
 src/LocalMapping.cc.s:
-	$(MAKE) -f CMakeFiles/ORB_SLAM2.dir/build.make CMakeFiles/ORB_SLAM2.dir/src/LocalMapping.cc.s
+	$(MAKE) -f CMakeFiles/Stereo_VO.dir/build.make CMakeFiles/Stereo_VO.dir/src/LocalMapping.cc.s
 .PHONY : src/LocalMapping.cc.s
 
 src/LoopClosing.o: src/LoopClosing.cc.o
@@ -435,7 +287,7 @@ src/LoopClosing.o: src/LoopClosing.cc.o
 
 # target to build an object file
 src/LoopClosing.cc.o:
-	$(MAKE) -f CMakeFiles/ORB_SLAM2.dir/build.make CMakeFiles/ORB_SLAM2.dir/src/LoopClosing.cc.o
+	$(MAKE) -f CMakeFiles/Stereo_VO.dir/build.make CMakeFiles/Stereo_VO.dir/src/LoopClosing.cc.o
 .PHONY : src/LoopClosing.cc.o
 
 src/LoopClosing.i: src/LoopClosing.cc.i
@@ -443,7 +295,7 @@ src/LoopClosing.i: src/LoopClosing.cc.i
 
 # target to preprocess a source file
 src/LoopClosing.cc.i:
-	$(MAKE) -f CMakeFiles/ORB_SLAM2.dir/build.make CMakeFiles/ORB_SLAM2.dir/src/LoopClosing.cc.i
+	$(MAKE) -f CMakeFiles/Stereo_VO.dir/build.make CMakeFiles/Stereo_VO.dir/src/LoopClosing.cc.i
 .PHONY : src/LoopClosing.cc.i
 
 src/LoopClosing.s: src/LoopClosing.cc.s
@@ -451,7 +303,7 @@ src/LoopClosing.s: src/LoopClosing.cc.s
 
 # target to generate assembly for a file
 src/LoopClosing.cc.s:
-	$(MAKE) -f CMakeFiles/ORB_SLAM2.dir/build.make CMakeFiles/ORB_SLAM2.dir/src/LoopClosing.cc.s
+	$(MAKE) -f CMakeFiles/Stereo_VO.dir/build.make CMakeFiles/Stereo_VO.dir/src/LoopClosing.cc.s
 .PHONY : src/LoopClosing.cc.s
 
 src/Map.o: src/Map.cc.o
@@ -459,7 +311,7 @@ src/Map.o: src/Map.cc.o
 
 # target to build an object file
 src/Map.cc.o:
-	$(MAKE) -f CMakeFiles/ORB_SLAM2.dir/build.make CMakeFiles/ORB_SLAM2.dir/src/Map.cc.o
+	$(MAKE) -f CMakeFiles/Stereo_VO.dir/build.make CMakeFiles/Stereo_VO.dir/src/Map.cc.o
 .PHONY : src/Map.cc.o
 
 src/Map.i: src/Map.cc.i
@@ -467,7 +319,7 @@ src/Map.i: src/Map.cc.i
 
 # target to preprocess a source file
 src/Map.cc.i:
-	$(MAKE) -f CMakeFiles/ORB_SLAM2.dir/build.make CMakeFiles/ORB_SLAM2.dir/src/Map.cc.i
+	$(MAKE) -f CMakeFiles/Stereo_VO.dir/build.make CMakeFiles/Stereo_VO.dir/src/Map.cc.i
 .PHONY : src/Map.cc.i
 
 src/Map.s: src/Map.cc.s
@@ -475,7 +327,7 @@ src/Map.s: src/Map.cc.s
 
 # target to generate assembly for a file
 src/Map.cc.s:
-	$(MAKE) -f CMakeFiles/ORB_SLAM2.dir/build.make CMakeFiles/ORB_SLAM2.dir/src/Map.cc.s
+	$(MAKE) -f CMakeFiles/Stereo_VO.dir/build.make CMakeFiles/Stereo_VO.dir/src/Map.cc.s
 .PHONY : src/Map.cc.s
 
 src/MapDrawer.o: src/MapDrawer.cc.o
@@ -483,7 +335,7 @@ src/MapDrawer.o: src/MapDrawer.cc.o
 
 # target to build an object file
 src/MapDrawer.cc.o:
-	$(MAKE) -f CMakeFiles/ORB_SLAM2.dir/build.make CMakeFiles/ORB_SLAM2.dir/src/MapDrawer.cc.o
+	$(MAKE) -f CMakeFiles/Stereo_VO.dir/build.make CMakeFiles/Stereo_VO.dir/src/MapDrawer.cc.o
 .PHONY : src/MapDrawer.cc.o
 
 src/MapDrawer.i: src/MapDrawer.cc.i
@@ -491,7 +343,7 @@ src/MapDrawer.i: src/MapDrawer.cc.i
 
 # target to preprocess a source file
 src/MapDrawer.cc.i:
-	$(MAKE) -f CMakeFiles/ORB_SLAM2.dir/build.make CMakeFiles/ORB_SLAM2.dir/src/MapDrawer.cc.i
+	$(MAKE) -f CMakeFiles/Stereo_VO.dir/build.make CMakeFiles/Stereo_VO.dir/src/MapDrawer.cc.i
 .PHONY : src/MapDrawer.cc.i
 
 src/MapDrawer.s: src/MapDrawer.cc.s
@@ -499,7 +351,7 @@ src/MapDrawer.s: src/MapDrawer.cc.s
 
 # target to generate assembly for a file
 src/MapDrawer.cc.s:
-	$(MAKE) -f CMakeFiles/ORB_SLAM2.dir/build.make CMakeFiles/ORB_SLAM2.dir/src/MapDrawer.cc.s
+	$(MAKE) -f CMakeFiles/Stereo_VO.dir/build.make CMakeFiles/Stereo_VO.dir/src/MapDrawer.cc.s
 .PHONY : src/MapDrawer.cc.s
 
 src/MapPoint.o: src/MapPoint.cc.o
@@ -507,7 +359,7 @@ src/MapPoint.o: src/MapPoint.cc.o
 
 # target to build an object file
 src/MapPoint.cc.o:
-	$(MAKE) -f CMakeFiles/ORB_SLAM2.dir/build.make CMakeFiles/ORB_SLAM2.dir/src/MapPoint.cc.o
+	$(MAKE) -f CMakeFiles/Stereo_VO.dir/build.make CMakeFiles/Stereo_VO.dir/src/MapPoint.cc.o
 .PHONY : src/MapPoint.cc.o
 
 src/MapPoint.i: src/MapPoint.cc.i
@@ -515,7 +367,7 @@ src/MapPoint.i: src/MapPoint.cc.i
 
 # target to preprocess a source file
 src/MapPoint.cc.i:
-	$(MAKE) -f CMakeFiles/ORB_SLAM2.dir/build.make CMakeFiles/ORB_SLAM2.dir/src/MapPoint.cc.i
+	$(MAKE) -f CMakeFiles/Stereo_VO.dir/build.make CMakeFiles/Stereo_VO.dir/src/MapPoint.cc.i
 .PHONY : src/MapPoint.cc.i
 
 src/MapPoint.s: src/MapPoint.cc.s
@@ -523,7 +375,7 @@ src/MapPoint.s: src/MapPoint.cc.s
 
 # target to generate assembly for a file
 src/MapPoint.cc.s:
-	$(MAKE) -f CMakeFiles/ORB_SLAM2.dir/build.make CMakeFiles/ORB_SLAM2.dir/src/MapPoint.cc.s
+	$(MAKE) -f CMakeFiles/Stereo_VO.dir/build.make CMakeFiles/Stereo_VO.dir/src/MapPoint.cc.s
 .PHONY : src/MapPoint.cc.s
 
 src/ORBextractor.o: src/ORBextractor.cc.o
@@ -531,7 +383,7 @@ src/ORBextractor.o: src/ORBextractor.cc.o
 
 # target to build an object file
 src/ORBextractor.cc.o:
-	$(MAKE) -f CMakeFiles/ORB_SLAM2.dir/build.make CMakeFiles/ORB_SLAM2.dir/src/ORBextractor.cc.o
+	$(MAKE) -f CMakeFiles/Stereo_VO.dir/build.make CMakeFiles/Stereo_VO.dir/src/ORBextractor.cc.o
 .PHONY : src/ORBextractor.cc.o
 
 src/ORBextractor.i: src/ORBextractor.cc.i
@@ -539,7 +391,7 @@ src/ORBextractor.i: src/ORBextractor.cc.i
 
 # target to preprocess a source file
 src/ORBextractor.cc.i:
-	$(MAKE) -f CMakeFiles/ORB_SLAM2.dir/build.make CMakeFiles/ORB_SLAM2.dir/src/ORBextractor.cc.i
+	$(MAKE) -f CMakeFiles/Stereo_VO.dir/build.make CMakeFiles/Stereo_VO.dir/src/ORBextractor.cc.i
 .PHONY : src/ORBextractor.cc.i
 
 src/ORBextractor.s: src/ORBextractor.cc.s
@@ -547,7 +399,7 @@ src/ORBextractor.s: src/ORBextractor.cc.s
 
 # target to generate assembly for a file
 src/ORBextractor.cc.s:
-	$(MAKE) -f CMakeFiles/ORB_SLAM2.dir/build.make CMakeFiles/ORB_SLAM2.dir/src/ORBextractor.cc.s
+	$(MAKE) -f CMakeFiles/Stereo_VO.dir/build.make CMakeFiles/Stereo_VO.dir/src/ORBextractor.cc.s
 .PHONY : src/ORBextractor.cc.s
 
 src/ORBmatcher.o: src/ORBmatcher.cc.o
@@ -555,7 +407,7 @@ src/ORBmatcher.o: src/ORBmatcher.cc.o
 
 # target to build an object file
 src/ORBmatcher.cc.o:
-	$(MAKE) -f CMakeFiles/ORB_SLAM2.dir/build.make CMakeFiles/ORB_SLAM2.dir/src/ORBmatcher.cc.o
+	$(MAKE) -f CMakeFiles/Stereo_VO.dir/build.make CMakeFiles/Stereo_VO.dir/src/ORBmatcher.cc.o
 .PHONY : src/ORBmatcher.cc.o
 
 src/ORBmatcher.i: src/ORBmatcher.cc.i
@@ -563,7 +415,7 @@ src/ORBmatcher.i: src/ORBmatcher.cc.i
 
 # target to preprocess a source file
 src/ORBmatcher.cc.i:
-	$(MAKE) -f CMakeFiles/ORB_SLAM2.dir/build.make CMakeFiles/ORB_SLAM2.dir/src/ORBmatcher.cc.i
+	$(MAKE) -f CMakeFiles/Stereo_VO.dir/build.make CMakeFiles/Stereo_VO.dir/src/ORBmatcher.cc.i
 .PHONY : src/ORBmatcher.cc.i
 
 src/ORBmatcher.s: src/ORBmatcher.cc.s
@@ -571,7 +423,7 @@ src/ORBmatcher.s: src/ORBmatcher.cc.s
 
 # target to generate assembly for a file
 src/ORBmatcher.cc.s:
-	$(MAKE) -f CMakeFiles/ORB_SLAM2.dir/build.make CMakeFiles/ORB_SLAM2.dir/src/ORBmatcher.cc.s
+	$(MAKE) -f CMakeFiles/Stereo_VO.dir/build.make CMakeFiles/Stereo_VO.dir/src/ORBmatcher.cc.s
 .PHONY : src/ORBmatcher.cc.s
 
 src/Optimizer.o: src/Optimizer.cc.o
@@ -579,7 +431,7 @@ src/Optimizer.o: src/Optimizer.cc.o
 
 # target to build an object file
 src/Optimizer.cc.o:
-	$(MAKE) -f CMakeFiles/ORB_SLAM2.dir/build.make CMakeFiles/ORB_SLAM2.dir/src/Optimizer.cc.o
+	$(MAKE) -f CMakeFiles/Stereo_VO.dir/build.make CMakeFiles/Stereo_VO.dir/src/Optimizer.cc.o
 .PHONY : src/Optimizer.cc.o
 
 src/Optimizer.i: src/Optimizer.cc.i
@@ -587,7 +439,7 @@ src/Optimizer.i: src/Optimizer.cc.i
 
 # target to preprocess a source file
 src/Optimizer.cc.i:
-	$(MAKE) -f CMakeFiles/ORB_SLAM2.dir/build.make CMakeFiles/ORB_SLAM2.dir/src/Optimizer.cc.i
+	$(MAKE) -f CMakeFiles/Stereo_VO.dir/build.make CMakeFiles/Stereo_VO.dir/src/Optimizer.cc.i
 .PHONY : src/Optimizer.cc.i
 
 src/Optimizer.s: src/Optimizer.cc.s
@@ -595,7 +447,7 @@ src/Optimizer.s: src/Optimizer.cc.s
 
 # target to generate assembly for a file
 src/Optimizer.cc.s:
-	$(MAKE) -f CMakeFiles/ORB_SLAM2.dir/build.make CMakeFiles/ORB_SLAM2.dir/src/Optimizer.cc.s
+	$(MAKE) -f CMakeFiles/Stereo_VO.dir/build.make CMakeFiles/Stereo_VO.dir/src/Optimizer.cc.s
 .PHONY : src/Optimizer.cc.s
 
 src/PnPsolver.o: src/PnPsolver.cc.o
@@ -603,7 +455,7 @@ src/PnPsolver.o: src/PnPsolver.cc.o
 
 # target to build an object file
 src/PnPsolver.cc.o:
-	$(MAKE) -f CMakeFiles/ORB_SLAM2.dir/build.make CMakeFiles/ORB_SLAM2.dir/src/PnPsolver.cc.o
+	$(MAKE) -f CMakeFiles/Stereo_VO.dir/build.make CMakeFiles/Stereo_VO.dir/src/PnPsolver.cc.o
 .PHONY : src/PnPsolver.cc.o
 
 src/PnPsolver.i: src/PnPsolver.cc.i
@@ -611,7 +463,7 @@ src/PnPsolver.i: src/PnPsolver.cc.i
 
 # target to preprocess a source file
 src/PnPsolver.cc.i:
-	$(MAKE) -f CMakeFiles/ORB_SLAM2.dir/build.make CMakeFiles/ORB_SLAM2.dir/src/PnPsolver.cc.i
+	$(MAKE) -f CMakeFiles/Stereo_VO.dir/build.make CMakeFiles/Stereo_VO.dir/src/PnPsolver.cc.i
 .PHONY : src/PnPsolver.cc.i
 
 src/PnPsolver.s: src/PnPsolver.cc.s
@@ -619,7 +471,7 @@ src/PnPsolver.s: src/PnPsolver.cc.s
 
 # target to generate assembly for a file
 src/PnPsolver.cc.s:
-	$(MAKE) -f CMakeFiles/ORB_SLAM2.dir/build.make CMakeFiles/ORB_SLAM2.dir/src/PnPsolver.cc.s
+	$(MAKE) -f CMakeFiles/Stereo_VO.dir/build.make CMakeFiles/Stereo_VO.dir/src/PnPsolver.cc.s
 .PHONY : src/PnPsolver.cc.s
 
 src/Sim3Solver.o: src/Sim3Solver.cc.o
@@ -627,7 +479,7 @@ src/Sim3Solver.o: src/Sim3Solver.cc.o
 
 # target to build an object file
 src/Sim3Solver.cc.o:
-	$(MAKE) -f CMakeFiles/ORB_SLAM2.dir/build.make CMakeFiles/ORB_SLAM2.dir/src/Sim3Solver.cc.o
+	$(MAKE) -f CMakeFiles/Stereo_VO.dir/build.make CMakeFiles/Stereo_VO.dir/src/Sim3Solver.cc.o
 .PHONY : src/Sim3Solver.cc.o
 
 src/Sim3Solver.i: src/Sim3Solver.cc.i
@@ -635,7 +487,7 @@ src/Sim3Solver.i: src/Sim3Solver.cc.i
 
 # target to preprocess a source file
 src/Sim3Solver.cc.i:
-	$(MAKE) -f CMakeFiles/ORB_SLAM2.dir/build.make CMakeFiles/ORB_SLAM2.dir/src/Sim3Solver.cc.i
+	$(MAKE) -f CMakeFiles/Stereo_VO.dir/build.make CMakeFiles/Stereo_VO.dir/src/Sim3Solver.cc.i
 .PHONY : src/Sim3Solver.cc.i
 
 src/Sim3Solver.s: src/Sim3Solver.cc.s
@@ -643,7 +495,7 @@ src/Sim3Solver.s: src/Sim3Solver.cc.s
 
 # target to generate assembly for a file
 src/Sim3Solver.cc.s:
-	$(MAKE) -f CMakeFiles/ORB_SLAM2.dir/build.make CMakeFiles/ORB_SLAM2.dir/src/Sim3Solver.cc.s
+	$(MAKE) -f CMakeFiles/Stereo_VO.dir/build.make CMakeFiles/Stereo_VO.dir/src/Sim3Solver.cc.s
 .PHONY : src/Sim3Solver.cc.s
 
 src/System.o: src/System.cc.o
@@ -651,7 +503,7 @@ src/System.o: src/System.cc.o
 
 # target to build an object file
 src/System.cc.o:
-	$(MAKE) -f CMakeFiles/ORB_SLAM2.dir/build.make CMakeFiles/ORB_SLAM2.dir/src/System.cc.o
+	$(MAKE) -f CMakeFiles/Stereo_VO.dir/build.make CMakeFiles/Stereo_VO.dir/src/System.cc.o
 .PHONY : src/System.cc.o
 
 src/System.i: src/System.cc.i
@@ -659,7 +511,7 @@ src/System.i: src/System.cc.i
 
 # target to preprocess a source file
 src/System.cc.i:
-	$(MAKE) -f CMakeFiles/ORB_SLAM2.dir/build.make CMakeFiles/ORB_SLAM2.dir/src/System.cc.i
+	$(MAKE) -f CMakeFiles/Stereo_VO.dir/build.make CMakeFiles/Stereo_VO.dir/src/System.cc.i
 .PHONY : src/System.cc.i
 
 src/System.s: src/System.cc.s
@@ -667,7 +519,7 @@ src/System.s: src/System.cc.s
 
 # target to generate assembly for a file
 src/System.cc.s:
-	$(MAKE) -f CMakeFiles/ORB_SLAM2.dir/build.make CMakeFiles/ORB_SLAM2.dir/src/System.cc.s
+	$(MAKE) -f CMakeFiles/Stereo_VO.dir/build.make CMakeFiles/Stereo_VO.dir/src/System.cc.s
 .PHONY : src/System.cc.s
 
 src/Tracking.o: src/Tracking.cc.o
@@ -675,7 +527,7 @@ src/Tracking.o: src/Tracking.cc.o
 
 # target to build an object file
 src/Tracking.cc.o:
-	$(MAKE) -f CMakeFiles/ORB_SLAM2.dir/build.make CMakeFiles/ORB_SLAM2.dir/src/Tracking.cc.o
+	$(MAKE) -f CMakeFiles/Stereo_VO.dir/build.make CMakeFiles/Stereo_VO.dir/src/Tracking.cc.o
 .PHONY : src/Tracking.cc.o
 
 src/Tracking.i: src/Tracking.cc.i
@@ -683,7 +535,7 @@ src/Tracking.i: src/Tracking.cc.i
 
 # target to preprocess a source file
 src/Tracking.cc.i:
-	$(MAKE) -f CMakeFiles/ORB_SLAM2.dir/build.make CMakeFiles/ORB_SLAM2.dir/src/Tracking.cc.i
+	$(MAKE) -f CMakeFiles/Stereo_VO.dir/build.make CMakeFiles/Stereo_VO.dir/src/Tracking.cc.i
 .PHONY : src/Tracking.cc.i
 
 src/Tracking.s: src/Tracking.cc.s
@@ -691,7 +543,7 @@ src/Tracking.s: src/Tracking.cc.s
 
 # target to generate assembly for a file
 src/Tracking.cc.s:
-	$(MAKE) -f CMakeFiles/ORB_SLAM2.dir/build.make CMakeFiles/ORB_SLAM2.dir/src/Tracking.cc.s
+	$(MAKE) -f CMakeFiles/Stereo_VO.dir/build.make CMakeFiles/Stereo_VO.dir/src/Tracking.cc.s
 .PHONY : src/Tracking.cc.s
 
 src/Viewer.o: src/Viewer.cc.o
@@ -699,7 +551,7 @@ src/Viewer.o: src/Viewer.cc.o
 
 # target to build an object file
 src/Viewer.cc.o:
-	$(MAKE) -f CMakeFiles/ORB_SLAM2.dir/build.make CMakeFiles/ORB_SLAM2.dir/src/Viewer.cc.o
+	$(MAKE) -f CMakeFiles/Stereo_VO.dir/build.make CMakeFiles/Stereo_VO.dir/src/Viewer.cc.o
 .PHONY : src/Viewer.cc.o
 
 src/Viewer.i: src/Viewer.cc.i
@@ -707,7 +559,7 @@ src/Viewer.i: src/Viewer.cc.i
 
 # target to preprocess a source file
 src/Viewer.cc.i:
-	$(MAKE) -f CMakeFiles/ORB_SLAM2.dir/build.make CMakeFiles/ORB_SLAM2.dir/src/Viewer.cc.i
+	$(MAKE) -f CMakeFiles/Stereo_VO.dir/build.make CMakeFiles/Stereo_VO.dir/src/Viewer.cc.i
 .PHONY : src/Viewer.cc.i
 
 src/Viewer.s: src/Viewer.cc.s
@@ -715,7 +567,7 @@ src/Viewer.s: src/Viewer.cc.s
 
 # target to generate assembly for a file
 src/Viewer.cc.s:
-	$(MAKE) -f CMakeFiles/ORB_SLAM2.dir/build.make CMakeFiles/ORB_SLAM2.dir/src/Viewer.cc.s
+	$(MAKE) -f CMakeFiles/Stereo_VO.dir/build.make CMakeFiles/Stereo_VO.dir/src/Viewer.cc.s
 .PHONY : src/Viewer.cc.s
 
 # Help Target
@@ -724,25 +576,9 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... ORB_SLAM2"
+	@echo "... Stereo_VO"
 	@echo "... edit_cache"
-	@echo "... mono_kitti"
-	@echo "... mono_tum"
 	@echo "... rebuild_cache"
-	@echo "... rgbd_tum"
-	@echo "... stereo_kitti"
-	@echo "... Examples/Monocular/mono_kitti.o"
-	@echo "... Examples/Monocular/mono_kitti.i"
-	@echo "... Examples/Monocular/mono_kitti.s"
-	@echo "... Examples/Monocular/mono_tum.o"
-	@echo "... Examples/Monocular/mono_tum.i"
-	@echo "... Examples/Monocular/mono_tum.s"
-	@echo "... Examples/RGB-D/rgbd_tum.o"
-	@echo "... Examples/RGB-D/rgbd_tum.i"
-	@echo "... Examples/RGB-D/rgbd_tum.s"
-	@echo "... Examples/Stereo/stereo_kitti.o"
-	@echo "... Examples/Stereo/stereo_kitti.i"
-	@echo "... Examples/Stereo/stereo_kitti.s"
 	@echo "... src/Converter.o"
 	@echo "... src/Converter.i"
 	@echo "... src/Converter.s"
