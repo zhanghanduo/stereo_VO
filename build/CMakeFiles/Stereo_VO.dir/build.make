@@ -34,9 +34,6 @@ RM = /usr/bin/cmake -E remove -f
 # Escaping for special characters.
 EQUALS = =
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
-
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/zh/projects/stereo_VO
 
@@ -534,7 +531,6 @@ Stereo_VO_EXTERNAL_OBJECTS =
 ../lib/libStereo_VO.so: CMakeFiles/Stereo_VO.dir/src/Initializer.cc.o
 ../lib/libStereo_VO.so: CMakeFiles/Stereo_VO.dir/src/Viewer.cc.o
 ../lib/libStereo_VO.so: CMakeFiles/Stereo_VO.dir/build.make
-../lib/libStereo_VO.so: /usr/local/lib/libopencv_viz.so.2.4.11
 ../lib/libStereo_VO.so: /usr/local/lib/libopencv_videostab.so.2.4.11
 ../lib/libStereo_VO.so: /usr/local/lib/libopencv_video.so.2.4.11
 ../lib/libStereo_VO.so: /usr/local/lib/libopencv_ts.a
@@ -554,7 +550,7 @@ Stereo_VO_EXTERNAL_OBJECTS =
 ../lib/libStereo_VO.so: /usr/local/lib/libopencv_core.so.2.4.11
 ../lib/libStereo_VO.so: /usr/local/lib/libopencv_contrib.so.2.4.11
 ../lib/libStereo_VO.so: /usr/local/lib/libopencv_calib3d.so.2.4.11
-../lib/libStereo_VO.so: /home/zh/softwares/Pangolin-master/build/src/libpangolin.so
+../lib/libStereo_VO.so: /home/zh/softwares/Pangolin/build/src/libpangolin.so
 ../lib/libStereo_VO.so: ../Thirdparty/DBoW2/lib/libDBoW2.so
 ../lib/libStereo_VO.so: ../Thirdparty/g2o/lib/libg2o.so
 ../lib/libStereo_VO.so: /usr/local/lib/libopencv_nonfree.so.2.4.11

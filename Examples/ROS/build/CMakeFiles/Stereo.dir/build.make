@@ -34,9 +34,6 @@ RM = /usr/bin/cmake -E remove -f
 # Escaping for special characters.
 EQUALS = =
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
-
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/zh/projects/stereo_VO/Examples/ROS
 
@@ -105,7 +102,7 @@ CMakeFiles/Stereo.dir/src/ros_stereo.cc.o: /opt/ros/indigo/share/tf/package.xml
 CMakeFiles/Stereo.dir/src/ros_stereo.cc.o: /opt/ros/indigo/share/class_loader/package.xml
 CMakeFiles/Stereo.dir/src/ros_stereo.cc.o: /opt/ros/indigo/share/pluginlib/package.xml
 CMakeFiles/Stereo.dir/src/ros_stereo.cc.o: /opt/ros/indigo/share/image_transport/package.xml
-CMakeFiles/Stereo.dir/src/ros_stereo.cc.o: /opt/ros/indigo/share/cv_bridge/package.xml
+CMakeFiles/Stereo.dir/src/ros_stereo.cc.o: /home/zh/catkin_ws/src/cv_bridge/package.xml
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/zh/projects/stereo_VO/Examples/ROS/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Stereo.dir/src/ros_stereo.cc.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Stereo.dir/src/ros_stereo.cc.o -c /home/zh/projects/stereo_VO/Examples/ROS/src/ros_stereo.cc
@@ -140,31 +137,6 @@ Stereo_EXTERNAL_OBJECTS =
 ../Stereo: /usr/lib/x86_64-linux-gnu/libboost_signals.so
 ../Stereo: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
 ../Stereo: /usr/lib/libPocoFoundation.so
-../Stereo: /usr/lib/x86_64-linux-gnu/libopencv_videostab.so.2.4.8
-../Stereo: /usr/lib/x86_64-linux-gnu/libopencv_video.so.2.4.8
-../Stereo: /usr/lib/x86_64-linux-gnu/libopencv_superres.so.2.4.8
-../Stereo: /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.2.4.8
-../Stereo: /usr/lib/x86_64-linux-gnu/libopencv_photo.so.2.4.8
-../Stereo: /usr/lib/x86_64-linux-gnu/libopencv_ocl.so.2.4.8
-../Stereo: /usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.2.4.8
-../Stereo: /usr/lib/x86_64-linux-gnu/libopencv_ml.so.2.4.8
-../Stereo: /usr/lib/x86_64-linux-gnu/libopencv_legacy.so.2.4.8
-../Stereo: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.2.4.8
-../Stereo: /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.2.4.8
-../Stereo: /usr/lib/x86_64-linux-gnu/libopencv_gpu.so.2.4.8
-../Stereo: /usr/lib/x86_64-linux-gnu/libopencv_flann.so.2.4.8
-../Stereo: /usr/lib/x86_64-linux-gnu/libopencv_features2d.so.2.4.8
-../Stereo: /usr/lib/x86_64-linux-gnu/libopencv_core.so.2.4.8
-../Stereo: /usr/lib/x86_64-linux-gnu/libopencv_contrib.so.2.4.8
-../Stereo: /usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.2.4.8
-../Stereo: /usr/lib/liblog4cxx.so
-../Stereo: /usr/lib/x86_64-linux-gnu/libboost_regex.so
-../Stereo: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-../Stereo: /usr/lib/x86_64-linux-gnu/libboost_system.so
-../Stereo: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-../Stereo: /usr/lib/x86_64-linux-gnu/libpthread.so
-../Stereo: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
-../Stereo: /usr/local/lib/libopencv_viz.so.2.4.11
 ../Stereo: /usr/local/lib/libopencv_videostab.so.2.4.11
 ../Stereo: /usr/local/lib/libopencv_video.so.2.4.11
 ../Stereo: /usr/local/lib/libopencv_superres.so.2.4.11
@@ -183,7 +155,32 @@ Stereo_EXTERNAL_OBJECTS =
 ../Stereo: /usr/local/lib/libopencv_core.so.2.4.11
 ../Stereo: /usr/local/lib/libopencv_contrib.so.2.4.11
 ../Stereo: /usr/local/lib/libopencv_calib3d.so.2.4.11
-../Stereo: /home/zh/softwares/Pangolin-master/build/src/libpangolin.so
+../Stereo: /usr/lib/liblog4cxx.so
+../Stereo: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+../Stereo: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+../Stereo: /usr/lib/x86_64-linux-gnu/libboost_system.so
+../Stereo: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+../Stereo: /usr/lib/x86_64-linux-gnu/libpthread.so
+../Stereo: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
+../Stereo: /usr/local/lib/libopencv_videostab.so.2.4.11
+../Stereo: /usr/local/lib/libopencv_video.so.2.4.11
+../Stereo: /usr/local/lib/libopencv_superres.so.2.4.11
+../Stereo: /usr/local/lib/libopencv_stitching.so.2.4.11
+../Stereo: /usr/local/lib/libopencv_photo.so.2.4.11
+../Stereo: /usr/local/lib/libopencv_ocl.so.2.4.11
+../Stereo: /usr/local/lib/libopencv_objdetect.so.2.4.11
+../Stereo: /usr/local/lib/libopencv_nonfree.so.2.4.11
+../Stereo: /usr/local/lib/libopencv_ml.so.2.4.11
+../Stereo: /usr/local/lib/libopencv_legacy.so.2.4.11
+../Stereo: /usr/local/lib/libopencv_imgproc.so.2.4.11
+../Stereo: /usr/local/lib/libopencv_highgui.so.2.4.11
+../Stereo: /usr/local/lib/libopencv_gpu.so.2.4.11
+../Stereo: /usr/local/lib/libopencv_flann.so.2.4.11
+../Stereo: /usr/local/lib/libopencv_features2d.so.2.4.11
+../Stereo: /usr/local/lib/libopencv_core.so.2.4.11
+../Stereo: /usr/local/lib/libopencv_contrib.so.2.4.11
+../Stereo: /usr/local/lib/libopencv_calib3d.so.2.4.11
+../Stereo: /home/zh/softwares/Pangolin/build/src/libpangolin.so
 ../Stereo: ../../../Thirdparty/DBoW2/lib/libDBoW2.so
 ../Stereo: ../../../Thirdparty/g2o/lib/libg2o.so
 ../Stereo: ../../../lib/libStereo_VO.so

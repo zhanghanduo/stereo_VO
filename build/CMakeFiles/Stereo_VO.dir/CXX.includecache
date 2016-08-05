@@ -1056,13 +1056,13 @@ pangolin/pangolin.h
 mutex
 -
 
-/home/zh/softwares/Pangolin-master/build/src/include/pangolin/config.h
+/home/zh/softwares/Pangolin/build/src/include/pangolin/config.h
 
-/home/zh/softwares/Pangolin-master/include/pangolin/compat/boostd.h
+/home/zh/softwares/Pangolin/include/pangolin/compat/boostd.h
 pangolin/platform.h
 -
 
-/home/zh/softwares/Pangolin-master/include/pangolin/compat/function.h
+/home/zh/softwares/Pangolin/include/pangolin/compat/function.h
 pangolin/platform.h
 -
 functional
@@ -1072,13 +1072,13 @@ boost/function.hpp
 pangolin/compat/boostd.h
 -
 
-/home/zh/softwares/Pangolin-master/include/pangolin/compat/ovr.h
+/home/zh/softwares/Pangolin/include/pangolin/compat/ovr.h
 pangolin/config.h
 -
 OVR.h
 -
 
-/home/zh/softwares/Pangolin-master/include/pangolin/compat/type_traits.h
+/home/zh/softwares/Pangolin/include/pangolin/compat/type_traits.h
 pangolin/platform.h
 -
 typeinfo
@@ -1090,7 +1090,7 @@ boost/type_traits.hpp
 pangolin/compat/boostd.h
 -
 
-/home/zh/softwares/Pangolin-master/include/pangolin/display/attach.h
+/home/zh/softwares/Pangolin/include/pangolin/display/attach.h
 iostream
 -
 string
@@ -1098,7 +1098,7 @@ string
 cmath
 -
 
-/home/zh/softwares/Pangolin-master/include/pangolin/display/device/display_android.h
+/home/zh/softwares/Pangolin/include/pangolin/display/device/display_android.h
 poll.h
 -
 pthread.h
@@ -1118,7 +1118,7 @@ string
 pangolin/utils/type_convert.h
 -
 
-/home/zh/softwares/Pangolin-master/include/pangolin/display/device/display_glut.h
+/home/zh/softwares/Pangolin/include/pangolin/display/device/display_glut.h
 pangolin/platform.h
 -
 pangolin/gl/glinclude.h
@@ -1126,7 +1126,7 @@ pangolin/gl/glinclude.h
 string
 -
 
-/home/zh/softwares/Pangolin-master/include/pangolin/display/display.h
+/home/zh/softwares/Pangolin/include/pangolin/display/display.h
 pangolin/platform.h
 -
 pangolin/gl/glinclude.h
@@ -1140,7 +1140,7 @@ pangolin/utils/params.h
 string
 -
 
-/home/zh/softwares/Pangolin-master/include/pangolin/display/opengl_render_state.h
+/home/zh/softwares/Pangolin/include/pangolin/display/opengl_render_state.h
 pangolin/platform.h
 -
 pangolin/utils/simple_math.h
@@ -1158,7 +1158,7 @@ TooN/se3.h
 pangolin/compat/ovr.h
 -
 
-/home/zh/softwares/Pangolin-master/include/pangolin/display/view.h
+/home/zh/softwares/Pangolin/include/pangolin/display/view.h
 vector
 -
 pangolin/display/viewport.h
@@ -1170,11 +1170,11 @@ pangolin/display/opengl_render_state.h
 pangolin/compat/function.h
 -
 
-/home/zh/softwares/Pangolin-master/include/pangolin/display/viewport.h
+/home/zh/softwares/Pangolin/include/pangolin/display/viewport.h
 pangolin/gl/glinclude.h
 -
 
-/home/zh/softwares/Pangolin-master/include/pangolin/display/widgets/widgets.h
+/home/zh/softwares/Pangolin/include/pangolin/display/widgets/widgets.h
 pangolin/display/view.h
 -
 pangolin/var/var.h
@@ -1186,11 +1186,11 @@ pangolin/compat/function.h
 pangolin/gl/glfont.h
 -
 
-/home/zh/softwares/Pangolin-master/include/pangolin/gl/colour.h
+/home/zh/softwares/Pangolin/include/pangolin/gl/colour.h
 stdexcept
 -
 
-/home/zh/softwares/Pangolin-master/include/pangolin/gl/gl.h
+/home/zh/softwares/Pangolin/include/pangolin/gl/gl.h
 pangolin/gl/glinclude.h
 -
 pangolin/display/viewport.h
@@ -1208,7 +1208,7 @@ cstdlib
 pangolin/gl/gl.hpp
 -
 
-/home/zh/softwares/Pangolin-master/include/pangolin/gl/gl.hpp
+/home/zh/softwares/Pangolin/include/pangolin/gl/gl.hpp
 pangolin/gl/gl.h
 -
 pangolin/gl/glpixformat.h
@@ -1222,13 +1222,13 @@ algorithm
 stdexcept
 -
 
-/home/zh/softwares/Pangolin-master/include/pangolin/gl/glchar.h
+/home/zh/softwares/Pangolin/include/pangolin/gl/glchar.h
 pangolin/gl/glplatform.h
 -
 map
 -
 
-/home/zh/softwares/Pangolin-master/include/pangolin/gl/gldraw.h
+/home/zh/softwares/Pangolin/include/pangolin/gl/gldraw.h
 pangolin/gl/glinclude.h
 -
 math.h
@@ -1238,7 +1238,7 @@ Eigen/Eigen
 Eigen/Geometry
 -
 
-/home/zh/softwares/Pangolin-master/include/pangolin/gl/glfont.h
+/home/zh/softwares/Pangolin/include/pangolin/gl/glfont.h
 pangolin/gl/gltext.h
 -
 cstdio
@@ -1246,17 +1246,17 @@ cstdio
 cstdarg
 -
 
-/home/zh/softwares/Pangolin-master/include/pangolin/gl/glinclude.h
+/home/zh/softwares/Pangolin/include/pangolin/gl/glinclude.h
 pangolin/gl/glplatform.h
 -
 pangolin/gl/gl_es_compat.h
 -
 
-/home/zh/softwares/Pangolin-master/include/pangolin/gl/glpangoglu.h
+/home/zh/softwares/Pangolin/include/pangolin/gl/glpangoglu.h
 pangolin/gl/glplatform.h
 -
 
-/home/zh/softwares/Pangolin-master/include/pangolin/gl/glpixformat.h
+/home/zh/softwares/Pangolin/include/pangolin/gl/glpixformat.h
 pangolin/gl/glplatform.h
 -
 pangolin/image/image_common.h
@@ -1264,7 +1264,7 @@ pangolin/image/image_common.h
 stdexcept
 -
 
-/home/zh/softwares/Pangolin-master/include/pangolin/gl/glplatform.h
+/home/zh/softwares/Pangolin/include/pangolin/gl/glplatform.h
 pangolin/platform.h
 -
 Windows.h
@@ -1292,7 +1292,7 @@ GL/gl.h
 pangolin/gl/glpangoglu.h
 -
 
-/home/zh/softwares/Pangolin-master/include/pangolin/gl/glsl.h
+/home/zh/softwares/Pangolin/include/pangolin/gl/glsl.h
 sstream
 -
 fstream
@@ -1316,13 +1316,13 @@ pangolin/display/opengl_render_state.h
 Eigen/Eigen
 -
 
-/home/zh/softwares/Pangolin-master/include/pangolin/gl/glstate.h
+/home/zh/softwares/Pangolin/include/pangolin/gl/glstate.h
 pangolin/gl/glinclude.h
 -
 stack
 -
 
-/home/zh/softwares/Pangolin-master/include/pangolin/gl/gltext.h
+/home/zh/softwares/Pangolin/include/pangolin/gl/gltext.h
 pangolin/gl/gl.h
 -
 pangolin/gl/glchar.h
@@ -1332,23 +1332,23 @@ vector
 string
 -
 
-/home/zh/softwares/Pangolin-master/include/pangolin/gl/glvbo.h
+/home/zh/softwares/Pangolin/include/pangolin/gl/glvbo.h
 pangolin/gl/gl.h
 -
 
-/home/zh/softwares/Pangolin-master/include/pangolin/handler/handler.h
+/home/zh/softwares/Pangolin/include/pangolin/handler/handler.h
 pangolin/display/opengl_render_state.h
 -
 pangolin/handler/handler_enums.h
 -
 
-/home/zh/softwares/Pangolin-master/include/pangolin/handler/handler_enums.h
+/home/zh/softwares/Pangolin/include/pangolin/handler/handler_enums.h
 
-/home/zh/softwares/Pangolin-master/include/pangolin/image/image.h
+/home/zh/softwares/Pangolin/include/pangolin/image/image.h
 cstddef
 -
 
-/home/zh/softwares/Pangolin-master/include/pangolin/image/image_common.h
+/home/zh/softwares/Pangolin/include/pangolin/image/image_common.h
 pangolin/platform.h
 -
 pangolin/utils/type_convert.h
@@ -1362,7 +1362,7 @@ string
 map
 -
 
-/home/zh/softwares/Pangolin-master/include/pangolin/image/image_io.h
+/home/zh/softwares/Pangolin/include/pangolin/image/image_io.h
 pangolin/image/image.h
 -
 pangolin/image/image_common.h
@@ -1370,7 +1370,7 @@ pangolin/image/image_common.h
 pangolin/utils/file_extension.h
 -
 
-/home/zh/softwares/Pangolin-master/include/pangolin/pangolin.h
+/home/zh/softwares/Pangolin/include/pangolin/pangolin.h
 pangolin/platform.h
 -
 pangolin/gl/gl.h
@@ -1404,7 +1404,7 @@ pangolin/video/video_output.h
 pangolin/image/image_io.h
 -
 
-/home/zh/softwares/Pangolin-master/include/pangolin/platform.h
+/home/zh/softwares/Pangolin/include/pangolin/platform.h
 pangolin/config.h
 -
 pangolin/pangolin_export.h
@@ -1414,7 +1414,7 @@ cstdio
 android/log.h
 -
 
-/home/zh/softwares/Pangolin-master/include/pangolin/plot/datalog.h
+/home/zh/softwares/Pangolin/include/pangolin/plot/datalog.h
 pangolin/platform.h
 -
 stdexcept
@@ -1428,7 +1428,7 @@ limits
 Eigen/Eigen
 -
 
-/home/zh/softwares/Pangolin-master/include/pangolin/plot/plotter.h
+/home/zh/softwares/Pangolin/include/pangolin/plot/plotter.h
 pangolin/gl/gl.h
 -
 pangolin/gl/glsl.h
@@ -1448,17 +1448,17 @@ pangolin/plot/range.h
 set
 -
 
-/home/zh/softwares/Pangolin-master/include/pangolin/plot/range.h
+/home/zh/softwares/Pangolin/include/pangolin/plot/range.h
 limits
 -
 
-/home/zh/softwares/Pangolin-master/include/pangolin/utils/file_extension.h
+/home/zh/softwares/Pangolin/include/pangolin/utils/file_extension.h
 pangolin/platform.h
 -
 string
 -
 
-/home/zh/softwares/Pangolin-master/include/pangolin/utils/file_utils.h
+/home/zh/softwares/Pangolin/include/pangolin/utils/file_utils.h
 pangolin/platform.h
 -
 string
@@ -1468,7 +1468,7 @@ vector
 algorithm
 -
 
-/home/zh/softwares/Pangolin-master/include/pangolin/utils/params.h
+/home/zh/softwares/Pangolin/include/pangolin/utils/params.h
 pangolin/platform.h
 -
 pangolin/utils/type_convert.h
@@ -1478,7 +1478,7 @@ string
 map
 -
 
-/home/zh/softwares/Pangolin-master/include/pangolin/utils/picojson.h
+/home/zh/softwares/Pangolin/include/pangolin/utils/picojson.h
 algorithm
 -
 cstdio
@@ -1526,7 +1526,7 @@ float.h
 limits.h
 -
 
-/home/zh/softwares/Pangolin-master/include/pangolin/utils/simple_math.h
+/home/zh/softwares/Pangolin/include/pangolin/utils/simple_math.h
 iostream
 -
 string.h
@@ -1538,7 +1538,7 @@ stdarg.h
 cmath
 -
 
-/home/zh/softwares/Pangolin-master/include/pangolin/utils/type_convert.h
+/home/zh/softwares/Pangolin/include/pangolin/utils/type_convert.h
 iostream
 -
 sstream
@@ -1548,7 +1548,7 @@ pangolin/compat/function.h
 pangolin/compat/type_traits.h
 -
 
-/home/zh/softwares/Pangolin-master/include/pangolin/utils/uri.h
+/home/zh/softwares/Pangolin/include/pangolin/utils/uri.h
 pangolin/platform.h
 -
 pangolin/utils/params.h
@@ -1556,7 +1556,7 @@ pangolin/utils/params.h
 string
 -
 
-/home/zh/softwares/Pangolin-master/include/pangolin/var/var.h
+/home/zh/softwares/Pangolin/include/pangolin/var/var.h
 stdexcept
 -
 string.h
@@ -1570,7 +1570,7 @@ pangolin/var/varwrapper.h
 pangolin/var/varstate.h
 -
 
-/home/zh/softwares/Pangolin-master/include/pangolin/var/varextra.h
+/home/zh/softwares/Pangolin/include/pangolin/var/varextra.h
 pangolin/platform.h
 -
 pangolin/var/var.h
@@ -1578,7 +1578,7 @@ pangolin/var/var.h
 vector
 -
 
-/home/zh/softwares/Pangolin-master/include/pangolin/var/varstate.h
+/home/zh/softwares/Pangolin/include/pangolin/var/varstate.h
 map
 -
 vector
@@ -1590,23 +1590,23 @@ pangolin/var/varvalue.h
 pangolin/utils/file_utils.h
 -
 
-/home/zh/softwares/Pangolin-master/include/pangolin/var/varvalue.h
+/home/zh/softwares/Pangolin/include/pangolin/var/varvalue.h
 pangolin/var/varvaluet.h
 -
 pangolin/var/varwrapper.h
 -
 
-/home/zh/softwares/Pangolin-master/include/pangolin/var/varvaluegeneric.h
+/home/zh/softwares/Pangolin/include/pangolin/var/varvaluegeneric.h
 string
 -
 
-/home/zh/softwares/Pangolin-master/include/pangolin/var/varvaluet.h
+/home/zh/softwares/Pangolin/include/pangolin/var/varvaluet.h
 pangolin/var/varvaluegeneric.h
 -
 pangolin/compat/type_traits.h
 -
 
-/home/zh/softwares/Pangolin-master/include/pangolin/var/varwrapper.h
+/home/zh/softwares/Pangolin/include/pangolin/var/varwrapper.h
 pangolin/var/varvaluegeneric.h
 -
 pangolin/compat/type_traits.h
@@ -1614,7 +1614,7 @@ pangolin/compat/type_traits.h
 pangolin/utils/type_convert.h
 -
 
-/home/zh/softwares/Pangolin-master/include/pangolin/video/video.h
+/home/zh/softwares/Pangolin/include/pangolin/video/video.h
 pangolin/image/image.h
 -
 pangolin/image/image_common.h
@@ -1624,7 +1624,7 @@ pangolin/utils/picojson.h
 vector
 -
 
-/home/zh/softwares/Pangolin-master/include/pangolin/video/video_output.h
+/home/zh/softwares/Pangolin/include/pangolin/video/video_output.h
 pangolin/video/video.h
 -
 

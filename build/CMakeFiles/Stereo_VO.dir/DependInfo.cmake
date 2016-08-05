@@ -42,8 +42,9 @@ SET(CMAKE_C_TARGET_INCLUDE_PATH
   ".."
   "../include"
   "/usr/local/include/eigen3"
-  "/home/zh/softwares/Pangolin-master/include"
-  "/home/zh/softwares/Pangolin-master/build/src/include"
+  "/home/zh/softwares/Pangolin/include"
+  "/home/zh/softwares/Pangolin/build/src/include"
+  "/usr/include/eigen3"
   )
 SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
 SET(CMAKE_Fortran_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

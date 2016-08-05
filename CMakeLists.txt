@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 2.8)
 project(Stereo_VO)
+# unset(OpenCV_CONFIG_PATH CACHE)
+# unset(OpenCV_DIR CACHE)
 
 IF(NOT CMAKE_BUILD_TYPE)
   SET(CMAKE_BUILD_TYPE Release)
@@ -29,6 +31,7 @@ endif()
 LIST(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake_modules)
 
 find_package(OpenCV 2.4.3 REQUIRED)
+# find_package(OpenCV REQUIRED HINTS /home/zh/softwares/opencv-3.1.0/install)
 find_package(Eigen3 3.1.0 REQUIRED)
 find_package(Pangolin REQUIRED)
 
@@ -72,7 +75,7 @@ ${PROJECT_SOURCE_DIR}/Thirdparty/g2o/lib/libg2o.so
 )
 
 # Build examples
-# 
+#
 # set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/Examples/RGB-D)
 #
 # add_executable(rgbd_tum
@@ -94,3 +97,5 @@ ${PROJECT_SOURCE_DIR}/Thirdparty/g2o/lib/libg2o.so
 # add_executable(mono_kitti
 # Examples/Monocular/mono_kitti.cc)
 # target_link_libraries(mono_kitti ${PROJECT_NAME})
+# unset(OpenCV_CONFIG_PATH CACHE)
+# unset(OpenCV_DIR CACHE)

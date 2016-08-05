@@ -287,13 +287,13 @@ OpenCV_LIB_DIR_DBG:PATH=
 OpenCV_LIB_DIR_OPT:PATH=
 
 //The directory containing a CMake configuration file for Pangolin.
-Pangolin_DIR:PATH=/home/zh/softwares/Pangolin-master/build/src
+Pangolin_DIR:PATH=/home/zh/softwares/Pangolin/build/src
 
 //Value Computed by CMake
 Stereo_VO_BINARY_DIR:STATIC=/home/zh/projects/stereo_VO/build
 
 //Dependencies for the target
-Stereo_VO_LIB_DEPENDS:STATIC=general;opencv_viz;general;opencv_videostab;general;opencv_video;general;opencv_ts;general;opencv_superres;general;opencv_stitching;general;opencv_photo;general;opencv_ocl;general;opencv_objdetect;general;opencv_nonfree;general;opencv_ml;general;opencv_legacy;general;opencv_imgproc;general;opencv_highgui;general;opencv_gpu;general;opencv_flann;general;opencv_features2d;general;opencv_core;general;opencv_contrib;general;opencv_calib3d;general;pangolin;general;/home/zh/projects/stereo_VO/Thirdparty/DBoW2/lib/libDBoW2.so;general;/home/zh/projects/stereo_VO/Thirdparty/g2o/lib/libg2o.so;
+Stereo_VO_LIB_DEPENDS:STATIC=general;opencv_videostab;general;opencv_video;general;opencv_ts;general;opencv_superres;general;opencv_stitching;general;opencv_photo;general;opencv_ocl;general;opencv_objdetect;general;opencv_nonfree;general;opencv_ml;general;opencv_legacy;general;opencv_imgproc;general;opencv_highgui;general;opencv_gpu;general;opencv_flann;general;opencv_features2d;general;opencv_core;general;opencv_contrib;general;opencv_calib3d;general;pangolin;general;/home/zh/projects/stereo_VO/Thirdparty/DBoW2/lib/libDBoW2.so;general;/home/zh/projects/stereo_VO/Thirdparty/g2o/lib/libg2o.so;
 
 //Value Computed by CMake
 Stereo_VO_SOURCE_DIR:STATIC=/home/zh/projects/stereo_VO
@@ -349,8 +349,6 @@ CMAKE_C_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
 CMAKE_C_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_FLAGS_RELWITHDEBINFO
 CMAKE_C_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
-//Path to cache edit program executable.
-CMAKE_EDIT_COMMAND:INTERNAL=/usr/bin/ccmake
 //Executable file format
 CMAKE_EXECUTABLE_FORMAT:INTERNAL=ELF
 //ADVANCED property for variable: CMAKE_EXE_LINKER_FLAGS

@@ -1,6 +1,9 @@
 cmake_minimum_required(VERSION 2.4.6)
 include($ENV{ROS_ROOT}/core/rosbuild/rosbuild.cmake)
 
+# unset(OpenCV_CONFIG_PATH CACHE)
+# unset(OpenCV_DIR CACHE)
+
 rosbuild_init()
 
 IF(NOT ROS_BUILD_TYPE)
@@ -31,6 +34,7 @@ endif()
 LIST(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/../../cmake_modules)
 
 find_package(OpenCV 2.4.3 REQUIRED)
+# find_package(OpenCV REQUIRED HINTS /home/zh/softwares/opencv-3.1.0/install)
 find_package(Eigen3 3.1.0 REQUIRED)
 find_package(Pangolin REQUIRED)
 
@@ -59,3 +63,6 @@ src/ros_stereo.cc
 target_link_libraries(Stereo
 ${LIBS}
 )
+#
+# unset(OpenCV_CONFIG_PATH CACHE)
+# unset(OpenCV_DIR CACHE)

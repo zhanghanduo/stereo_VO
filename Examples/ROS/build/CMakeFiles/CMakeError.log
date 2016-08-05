@@ -1,21 +1,21 @@
 Determining if the pthread_create exist failed with the following output:
 Change Dir: /home/zh/projects/stereo_VO/Examples/ROS/build/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec3405928840/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec3405928840.dir/build.make CMakeFiles/cmTryCompileExec3405928840.dir/build
+Run Build Command:/usr/bin/make "cmTryCompileExec2651700470/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2651700470.dir/build.make CMakeFiles/cmTryCompileExec2651700470.dir/build
 make[1]: Entering directory `/home/zh/projects/stereo_VO/Examples/ROS/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake -E cmake_progress_report /home/zh/projects/stereo_VO/Examples/ROS/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec3405928840.dir/CheckSymbolExists.c.o
-/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3405928840.dir/CheckSymbolExists.c.o   -c /home/zh/projects/stereo_VO/Examples/ROS/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTryCompileExec3405928840
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3405928840.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTryCompileExec3405928840.dir/CheckSymbolExists.c.o  -o cmTryCompileExec3405928840 -rdynamic 
-CMakeFiles/cmTryCompileExec3405928840.dir/CheckSymbolExists.c.o: In function `main':
+Building C object CMakeFiles/cmTryCompileExec2651700470.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec2651700470.dir/CheckSymbolExists.c.o   -c /home/zh/projects/stereo_VO/Examples/ROS/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec2651700470
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2651700470.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec2651700470.dir/CheckSymbolExists.c.o  -o cmTryCompileExec2651700470 -rdynamic 
+CMakeFiles/cmTryCompileExec2651700470.dir/CheckSymbolExists.c.o: In function `main':
 CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
-make[1]: *** [cmTryCompileExec3405928840] Error 1
+make[1]: *** [cmTryCompileExec2651700470] Error 1
 make[1]: Leaving directory `/home/zh/projects/stereo_VO/Examples/ROS/build/CMakeFiles/CMakeTmp'
-make: *** [cmTryCompileExec3405928840/fast] Error 2
+make: *** [cmTryCompileExec2651700470/fast] Error 2
 
 File /home/zh/projects/stereo_VO/Examples/ROS/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
@@ -35,19 +35,19 @@ int main(int argc, char** argv)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /home/zh/projects/stereo_VO/Examples/ROS/build/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec3724325920/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec3724325920.dir/build.make CMakeFiles/cmTryCompileExec3724325920.dir/build
+Run Build Command:/usr/bin/make "cmTryCompileExec184772175/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec184772175.dir/build.make CMakeFiles/cmTryCompileExec184772175.dir/build
 make[1]: Entering directory `/home/zh/projects/stereo_VO/Examples/ROS/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake -E cmake_progress_report /home/zh/projects/stereo_VO/Examples/ROS/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec3724325920.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec3724325920.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
-Linking C executable cmTryCompileExec3724325920
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3724325920.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec3724325920.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3724325920 -rdynamic -lpthreads 
+Building C object CMakeFiles/cmTryCompileExec184772175.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec184772175.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec184772175
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec184772175.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec184772175.dir/CheckFunctionExists.c.o  -o cmTryCompileExec184772175 -rdynamic -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-make[1]: *** [cmTryCompileExec3724325920] Error 1
 make[1]: Leaving directory `/home/zh/projects/stereo_VO/Examples/ROS/build/CMakeFiles/CMakeTmp'
-make: *** [cmTryCompileExec3724325920/fast] Error 2
+make[1]: *** [cmTryCompileExec184772175] Error 1
+make: *** [cmTryCompileExec184772175/fast] Error 2
 
 

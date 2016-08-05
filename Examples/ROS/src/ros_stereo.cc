@@ -33,7 +33,7 @@ int main(int argc, char **argv) {
 
   if (argc != 3) {
     cerr << endl
-         << "Usage: rosrun Stereo path_to_vocabulary path_to_settings" << endl;
+         << "Usage: rosrun ROS Stereo path_to_vocabulary path_to_settings" << endl;
     ros::shutdown();
     return 1;
   }
@@ -91,12 +91,11 @@ int main(int argc, char **argv) {
                                               &ImageGrabber::GrabImage, &igb);
   ros::spin();
 
-  // Stop all threads
-  SLAM.Shutdown();
-
   // Save camera trajectory
   SLAM.SaveKeyFrameTrajectoryTUM("KeyFrameTrajectory.txt");
   SLAM.SaveTrajectoryTUM("FrameTrajectory.txt");
+  // Stop all threads
+  SLAM.Shutdown();
 
   ros::shutdown();
 
@@ -117,20 +116,21 @@ void ImageGrabber::GrabImage(const sensor_msgs::ImageConstPtr &msg) {
   // imRight = cv_ptr->image(Range(1,1024),Range(1281,2560)).clone();
   imLeft1 = cv_ptr->image(Range::all(), Range(0, 1280)).clone();
   imRight1 = cv_ptr->image(Range::all(), Range(1280, 2560)).clone();
-  cv::Size rzSize(640, 512);
+  // cv::Size rzSize(640, 512);
+  cv::Size rzSize(640, 360);
   cv::resize(imLeft1, imLeft, rzSize);
   cv::resize(imRight1, imRight, rzSize);
   if (1) {
     Mat imLeftRec, imRightRec;
     remap(imLeft, imLeftRec, M1l, M2l, cv::INTER_LINEAR);
     remap(imRight, imRightRec, M1r, M2r, cv::INTER_LINEAR);
-    // mpSLAM->TrackStereo(imLeftRec(Range(310, 834), Range::all()),
-    //                     imRightRec(Range(310, 834), Range::all()),
-    //                     cv_ptr->header.stamp.toSec());
-    mpSLAM->TrackStereo(imLeftRec(Range(115, 317), Range::all()),
-                        imRightRec(Range(115, 317), Range::all()),
+    mpSLAM->TrackStereo(imLeftRec(Range(115, 377), Range::all()),
+                        imRightRec(Range(115, 377), Range::all()),
                         cv_ptr->header.stamp.toSec());
+    // mpSLAM->TrackStereo(imLeftRec(Range(15, 275), Range::all()),
+    //                     imRightRec(Range(15, 275), Range::all()),
+    //                     cv_ptr->header.stamp.toSec());
   } else {
-    mpSLAM->TrackStereo(imLeft, imRight, cv_ptr->header.stamp.toSec());
+    mpSLAM->TrackStereo(imLeft(Range(15, 275), Range::all()), imRight(Range(15, 275), Range::all()), cv_ptr->header.stamp.toSec());
   }
 }
